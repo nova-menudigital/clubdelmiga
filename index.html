@@ -1,0 +1,3979 @@
+<!DOCTYPE html>
+		<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+		<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+		<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+		<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+
+		<head>
+			<meta charset="utf-8">
+			<meta http-equiv="X-UA-Compatible" content="IE=edge">
+			<title>Club del Miga</title>
+			<meta name="keywords" content="fullscreen image, grid layout, flexbox grid, transition" />
+			<meta name="author" content="EstebanGuzzo" />
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+
+			<!-- LOAD JQUERY LIBRARY -->
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js"></script>
+			
+			<!-- LOADING FONTS AND ICONS -->
+			<link href="https://fonts.googleapis.com/css?family=Roboto:400%7CBarlow+Condensed:700%2C200%2C400&display=swap" rel="stylesheet" property="stylesheet" media="all" type="text/css" >
+
+			
+			<link rel="stylesheet" type="text/css" href="fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css">
+			<link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css">
+			
+			<!-- REVOLUTION STYLE SHEETS -->
+			<link rel="stylesheet" type="text/css" href="css/rs6.css">
+			<!-- REVOLUTION LAYERS STYLES -->
+						<!-- REVOLUTION JS FILES -->
+			
+		<script>
+			window.RS_MODULES = window.RS_MODULES || {};
+			window.RS_MODULES.modules = window.RS_MODULES.modules || {};
+			window.RS_MODULES.waiting = window.RS_MODULES.waiting || [];
+			window.RS_MODULES.defered = true;
+			window.RS_MODULES.moduleWaiting = window.RS_MODULES.moduleWaiting || {};
+			window.RS_MODULES.type = 'compiled';
+		</script>
+					<script src="js/rbtools.min.js"></script>
+							<script src="js/rs6.min.js"></script>
+							
+			<script>function setREVStartSize(e){
+			//window.requestAnimationFrame(function() {
+				window.RSIW = window.RSIW===undefined ? window.innerWidth : window.RSIW;
+				window.RSIH = window.RSIH===undefined ? window.innerHeight : window.RSIH;
+				try {
+					var pw = document.getElementById(e.c).parentNode.offsetWidth,
+						newh;
+					pw = pw===0 || isNaN(pw) || (e.l=="fullwidth" || e.layout=="fullwidth") ? window.RSIW : pw;
+					e.tabw = e.tabw===undefined ? 0 : parseInt(e.tabw);
+					e.thumbw = e.thumbw===undefined ? 0 : parseInt(e.thumbw);
+					e.tabh = e.tabh===undefined ? 0 : parseInt(e.tabh);
+					e.thumbh = e.thumbh===undefined ? 0 : parseInt(e.thumbh);
+					e.tabhide = e.tabhide===undefined ? 0 : parseInt(e.tabhide);
+					e.thumbhide = e.thumbhide===undefined ? 0 : parseInt(e.thumbhide);
+					e.mh = e.mh===undefined || e.mh=="" || e.mh==="auto" ? 0 : parseInt(e.mh,0);
+					if(e.layout==="fullscreen" || e.l==="fullscreen")
+						newh = Math.max(e.mh,window.RSIH);
+					else{
+						e.gw = Array.isArray(e.gw) ? e.gw : [e.gw];
+						for (var i in e.rl) if (e.gw[i]===undefined || e.gw[i]===0) e.gw[i] = e.gw[i-1];
+						e.gh = e.el===undefined || e.el==="" || (Array.isArray(e.el) && e.el.length==0)? e.gh : e.el;
+						e.gh = Array.isArray(e.gh) ? e.gh : [e.gh];
+						for (var i in e.rl) if (e.gh[i]===undefined || e.gh[i]===0) e.gh[i] = e.gh[i-1];
+											
+						var nl = new Array(e.rl.length),
+							ix = 0,
+							sl;
+						e.tabw = e.tabhide>=pw ? 0 : e.tabw;
+						e.thumbw = e.thumbhide>=pw ? 0 : e.thumbw;
+						e.tabh = e.tabhide>=pw ? 0 : e.tabh;
+						e.thumbh = e.thumbhide>=pw ? 0 : e.thumbh;
+						for (var i in e.rl) nl[i] = e.rl[i]<window.RSIW ? 0 : e.rl[i];
+						sl = nl[0];
+						for (var i in nl) if (sl>nl[i] && nl[i]>0) { sl = nl[i]; ix=i;}
+						var m = pw>(e.gw[ix]+e.tabw+e.thumbw) ? 1 : (pw-(e.tabw+e.thumbw)) / (e.gw[ix]);
+						newh =  (e.gh[ix] * m) + (e.tabh + e.thumbh);
+					}
+					var el = document.getElementById(e.c);
+					if (el!==null && el) el.style.height = newh+"px";
+					el = document.getElementById(e.c+"_wrapper");
+					if (el!==null && el) {
+						el.style.height = newh+"px";
+						el.style.display = "block";
+					}
+				} catch(e){
+					console.log("Failure at Presize of Slider:" + e)
+				}
+			//});
+		  };</script>
+
+			
+		</head>
+		
+		<body style="margin: 0px;">
+		
+
+			<!-- START App completa REVOLUTION SLIDER 6.5.25 --><p class="rs-p-wp-fix"></p>
+			<rs-module-wrap id="rev_slider_123_1_wrapper" data-alias="app-celu" data-source="gallery" style="visibility:hidden;background:transparent;padding:0;margin:0px auto;margin-top:0;margin-bottom:0;">
+				<rs-module id="rev_slider_123_1" style="" data-version="6.5.25">
+					<rs-slides>
+						<rs-slide style="position: absolute;" data-key="rs-650" data-title="Inicio" data-ssop="true" data-in="o:0;" data-out="a:false;">
+							<img src="assets/Fondo.jpg" alt="" title="Fondo" width="1080" height="1920" class="rev-slidebg tp-rs-img" data-bg="f:contain;" data-no-retina>
+<!--
+							--><rs-layer
+								id="slider-123-slide-650-layer-1" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:720px;y:-128px;"
+								data-text="w:normal;"
+								data-dim="w:449px;h:344px;"
+								data-frame_0="y:-50;"
+								data-frame_1="st:1020;sp:1000;sR:1020;"
+								data-frame_999="o:0;st:w;sR:6980;"
+								style="z-index:8;"
+							><img src="assets/albaja-corregida.png" alt="" class="tp-rs-img" width="519" height="398" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-650-layer-2" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:c;y:c;yo:-474px;"
+								data-text="w:normal;"
+								data-dim="w:322px;h:335px;"
+								data-frame_0="sX:0.9;sY:0.9;"
+								data-frame_1="e:power2.inOut;st:440;sp:1000;sR:440;"
+								data-frame_999="o:0;st:w;sR:7560;"
+								data-loop_0="y:-10;"
+								data-loop_999="y:10;sp:6000;e:sine.inOut;yym:t;"
+								style="z-index:7;"
+							><img src="assets/logo-club-del-miga.png" alt="" class="tp-rs-img" width="412" height="428" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-650-layer-3" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:c;y:756px;"
+								data-text="w:normal;"
+								data-dim="w:537px;h:210px;"
+								data-actions='o:click;a:jumptoslide;slide:rs-652;||o:click;a:playvideo;layer:slider-123-slide-650-layer-34;'
+								data-frame_0="x:right;"
+								data-frame_1="st:1200;sp:1000;sR:1200;"
+								data-frame_999="x:right;o:0;st:w;sp:1000;sR:6800;"
+								style="z-index:9;"
+							><img src="assets/pizzas-boton.png" alt="" class="tp-rs-img" width="419" height="164" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-650-layer-4" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:c;y:946px;"
+								data-text="w:normal;"
+								data-dim="w:560px;h:210px;"
+								data-actions='o:click;a:jumptoslide;slide:rs-651;||o:click;a:playvideo;layer:slider-123-slide-650-layer-34;'
+								data-frame_0="x:left;"
+								data-frame_1="st:800;sp:1000;sR:800;"
+								data-frame_999="x:left;o:0;st:w;sp:1000;sR:7200;"
+								style="z-index:9;"
+							><img src="assets/sandwiches-boton.png" alt="" class="tp-rs-img" width="419" height="157" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-650-layer-5" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:c;y:1163px;"
+								data-text="w:normal;"
+								data-dim="w:537px;h:210px;"
+								data-actions='o:click;a:jumptoslide;slide:rs-662;||o:click;a:playvideo;layer:slider-123-slide-650-layer-34;'
+								data-frame_0="x:right;"
+								data-frame_1="st:420;sp:1000;sR:420;"
+								data-frame_999="x:right;o:0;st:w;sp:1000;sR:7580;"
+								style="z-index:9;"
+							><img src="assets/al-plato-boton.png" alt="" class="tp-rs-img" width="419" height="164" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-650-layer-6" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:c;y:1348px;"
+								data-text="w:normal;"
+								data-dim="w:560px;h:210px;"
+								data-actions='o:click;a:jumptoslide;slide:rs-665;||o:click;a:playvideo;layer:slider-123-slide-650-layer-34;'
+								data-frame_0="x:left;"
+								data-frame_1="sp:1000;"
+								data-frame_999="x:left;o:0;st:w;sp:1000;sR:8000;"
+								style="z-index:9;"
+							><img src="assets/paquetes-boton.png" alt="" class="tp-rs-img" width="419" height="157" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-650-layer-7" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:-79px;y:1686px;"
+								data-text="w:normal;"
+								data-dim="w:658px;h:262px;"
+								data-frame_0="y:50;"
+								data-frame_1="st:1570;sp:1000;sR:1570;"
+								data-frame_999="y:50;o:0;st:w;sp:1000;sR:6430;"
+								style="z-index:10;"
+							><img src="assets/ternera-queso.png" alt="" class="tp-rs-img" width="963" height="384" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-650-layer-8" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:589px;y:1724px;"
+								data-text="w:normal;"
+								data-dim="w:618px;h:313px;"
+								data-frame_0="y:50;"
+								data-frame_1="st:1970;sp:1000;sR:1970;"
+								data-frame_999="y:50;o:0;st:w;sp:1000;sR:6030;"
+								style="z-index:11;"
+							><img src="assets/calabresa-2.png" alt="" class="tp-rs-img" width="973" height="493" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-650-layer-9" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:453px;y:1847px;"
+								data-text="w:normal;"
+								data-dim="w:162px;h:105px;"
+								data-frame_0="y:50;"
+								data-frame_1="st:2320;sp:1000;sR:2320;"
+								data-frame_999="y:50;o:0;st:w;sp:1000;sR:5680;"
+								style="z-index:12;"
+							><img src="assets/pngwing.com-10.png" alt="" class="tp-rs-img" width="607" height="394" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-650-layer-10" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:815px;y:-11px;"
+								data-text="w:normal;"
+								data-dim="w:205px;h:280px;"
+								data-frame_0="y:-50;"
+								data-frame_1="st:1370;sp:1000;sR:1370;"
+								data-frame_999="o:0;st:w;sR:6630;"
+								style="z-index:13;"
+							><img src="assets/pngwing.com-9.png" alt="" class="tp-rs-img" width="440" height="600" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-650-layer-34" 
+								class="rs-layer-audio rs-layer-hidden"
+								data-type="audio"
+								data-rsp_ch="on"
+								data-xy="x:50px;y:50px;"
+								data-text="w:normal;"
+								data-dim="w:54;h:54;"
+								data-video="w:54;h:54;p:auto;ap:false;nse:false;l:false;vd:100;ptimer:false;"
+								data-mp4="assets/tukin.mp3"
+								data-frame_999="o:0;st:w;sR:8700;"
+								style="z-index:18;"
+							> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-650-layer-59" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:-108px;y:-48px;"
+								data-text="w:normal;"
+								data-dim="w:402px;h:263px;"
+								data-frame_0="y:-50;"
+								data-frame_1="st:1040;sp:1000;sR:1040;"
+								data-frame_999="o:0;st:w;sR:6960;"
+								style="z-index:19;"
+							><img src="assets/pngwing.com-4.png" alt="" class="tp-rs-img" width="510" height="334" data-no-retina> 
+							</rs-layer><!--
+-->						</rs-slide>
+						<rs-slide style="position: absolute;" data-key="rs-651" data-title="Sandwiches tapa" data-ssop="true" data-in="o:0;" data-out="a:false;">
+							<img src="assets/Fondo.jpg" alt="" title="Fondo" width="1080" height="1920" class="rev-slidebg tp-rs-img" data-no-retina>
+<!--
+							--><rs-layer
+								id="slider-123-slide-651-layer-2" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:c;xo:-340px;y:c;yo:-763px;"
+								data-text="w:normal;"
+								data-dim="w:252px;h:262px;"
+								data-frame_0="sX:0.9;sY:0.9;"
+								data-frame_1="e:power2.inOut;st:440;sp:1000;sR:440;"
+								data-frame_999="o:0;st:w;sR:7560;"
+								data-loop_0="y:-10;"
+								data-loop_999="y:10;sp:6000;e:sine.inOut;yym:t;"
+								style="z-index:9;"
+							><img src="assets/logo-club-del-miga.png" alt="" class="tp-rs-img" width="412" height="428" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-651-layer-3" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:c;y:423px;"
+								data-text="w:normal;"
+								data-dim="w:537px;h:210px;"
+								data-actions='o:click;a:jumptoslide;slide:rs-653;||o:click;a:playvideo;layer:slider-123-slide-651-layer-61;'
+								data-frame_0="x:right;"
+								data-frame_1="st:1800;sp:1000;sR:1800;"
+								data-frame_999="x:right;o:0;st:w;sp:1000;sR:6200;"
+								style="z-index:15;"
+							><img src="assets/ternera.png" alt="" class="tp-rs-img" width="419" height="164" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-651-layer-4" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:c;y:606px;"
+								data-text="w:normal;"
+								data-dim="w:560px;h:210px;"
+								data-actions='o:click;a:jumptoslide;slide:rs-654;||o:click;a:playvideo;layer:slider-123-slide-651-layer-61;'
+								data-frame_0="x:left;"
+								data-frame_1="st:1500;sp:1000;sR:1500;"
+								data-frame_999="x:left;o:0;st:w;sp:1000;sR:6500;"
+								style="z-index:14;"
+							><img src="assets/pollo.png" alt="" class="tp-rs-img" width="419" height="157" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-651-layer-5" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:c;y:831px;"
+								data-text="w:normal;"
+								data-dim="w:537px;h:210px;"
+								data-actions='o:click;a:jumptoslide;slide:rs-661;||o:click;a:playvideo;layer:slider-123-slide-651-layer-61;'
+								data-frame_0="x:right;"
+								data-frame_1="st:1250;sp:1000;sR:1250;"
+								data-frame_999="x:right;o:0;st:w;sp:1000;sR:6750;"
+								style="z-index:13;"
+							><img src="assets/jamoncocido.png" alt="" class="tp-rs-img" width="419" height="164" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-651-layer-6" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:c;y:1014px;"
+								data-text="w:normal;"
+								data-dim="w:560px;h:210px;"
+								data-actions='o:click;a:jumptoslide;slide:rs-656;||o:click;a:playvideo;layer:slider-123-slide-651-layer-61;'
+								data-frame_0="x:left;"
+								data-frame_1="st:1010;sp:1000;sR:1010;"
+								data-frame_999="x:left;o:0;st:w;sp:1000;sR:6990;"
+								style="z-index:12;"
+							><img src="assets/atun.png" alt="" class="tp-rs-img" width="419" height="157" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-651-layer-44" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:453px;y:-10px;"
+								data-text="w:normal;"
+								data-dim="w:639px;h:250px;"
+								data-frame_0="y:top;"
+								data-frame_1="st:440;sp:1000;sR:440;"
+								data-frame_999="o:0;st:w;sR:7560;"
+								style="z-index:8;"
+							><img src="assets/sandwichestapa.png" alt="" class="tp-rs-img" width="419" height="164" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-651-layer-46" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:c;y:1233px;"
+								data-text="w:normal;"
+								data-dim="w:537px;h:210px;"
+								data-actions='o:click;a:jumptoslide;slide:rs-655;||o:click;a:playvideo;layer:slider-123-slide-651-layer-61;'
+								data-frame_0="x:right;"
+								data-frame_1="st:720;sp:1000;sR:720;"
+								data-frame_999="x:left;o:0;st:w;sp:1000;sR:7280;"
+								style="z-index:11;"
+							><img src="assets/jamoncrudo.png" alt="" class="tp-rs-img" width="419" height="164" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-651-layer-47" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:c;y:1405px;"
+								data-text="w:normal;"
+								data-dim="w:560px;h:210px;"
+								data-actions='o:click;a:jumptoslide;slide:rs-657;||o:click;a:playvideo;layer:slider-123-slide-651-layer-61;'
+								data-frame_0="x:left;"
+								data-frame_1="st:440;sp:1000;sR:440;"
+								data-frame_999="x:left;o:0;st:w;sp:1000;sR:7560;"
+								style="z-index:10;"
+							><img src="assets/vegetariano.png" alt="" class="tp-rs-img" width="419" height="157" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-651-layer-48" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:r;xo:60px;y:b;yo:60px;"
+								data-text="w:normal;"
+								data-dim="w:130px;h:130px;"
+								data-actions='o:click;a:jumptoslide;slide:rs-650;||o:click;a:playvideo;layer:slider-123-slide-651-layer-61;'
+								data-frame_0="x:right;"
+								data-frame_1="st:440;sp:1000;sR:440;"
+								data-frame_999="x:right;o:0;st:w;sp:1000;"
+								style="z-index:16;"
+							><img src="assets/volver.png" alt="" class="tp-rs-img" width="92" height="92" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-651-layer-61" 
+								class="rs-layer-audio rs-layer-hidden"
+								data-type="audio"
+								data-rsp_ch="on"
+								data-xy="x:50px;y:50px;"
+								data-text="w:normal;"
+								data-dim="w:54;h:54;"
+								data-video="w:54;h:54;p:auto;ap:false;nse:false;l:false;vd:100;ptimer:false;"
+								data-mp4="assets/tukin.mp3"
+								data-frame_999="o:0;st:w;"
+								style="z-index:18;"
+							> 
+							</rs-layer><!--
+-->						</rs-slide>
+						<rs-slide style="position: absolute;" data-key="rs-652" data-title="Pizzas" data-duration="48000ms" data-ssop="true" data-in="o:0;" data-out="a:false;">
+							<img src="assets/Fondo.jpg" alt="" title="Fondo" width="1080" height="1920" class="rev-slidebg tp-rs-img" data-bg="f:contain;" data-no-retina>
+<!--
+							--><rs-layer
+								id="slider-123-slide-652-layer-0" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:74px;y:56px;"
+								data-text="w:normal;"
+								data-dim="w:221px;h:230px;"
+								data-frame_0="x:-50;"
+								data-frame_1="sp:1000;"
+								data-frame_999="o:0;st:w;sR:47000;"
+								style="z-index:20;"
+							><img src="assets/logo-club-del-miga.png" alt="" class="tp-rs-img" width="412" height="428" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-652-layer-1" 
+								data-type="shape"
+								data-rsp_ch="on"
+								data-xy="x:58px;y:1435px;"
+								data-text="w:normal;"
+								data-dim="w:969px;h:69px;"
+								data-border="bos:solid;boc:#ffaa00;bow:1px,1px,5px,1px;bor:15px,15px,15px,15px;"
+								data-frame_0="y:-50px;o:1;"
+								data-frame_1="st:32000;sp:1000;sR:32000;"
+								data-frame_999="o:0;st:36010;sR:3010;"
+								style="z-index:11;background-color:rgba(0,0,0,0.5);"
+							> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-652-layer-2" 
+								data-type="text"
+								data-color="#0c0c0c"
+								data-rsp_ch="on"
+								data-xy="x:626px;y:46px;"
+								data-text="w:normal;s:100;fw:700;"
+								data-dim="w:710.012px;"
+								data-btrans="rZ:-10;"
+								data-frame_999="o:0;st:w;sR:47700;"
+								style="z-index:24;font-family:'Barlow Condensed';"
+							>Pizzas 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-652-layer-3" 
+								data-type="shape"
+								data-rsp_ch="on"
+								data-xy="x:58px;y:1509px;"
+								data-text="w:normal;"
+								data-dim="w:969px;h:69px;"
+								data-border="bos:solid;boc:#ffaa00;bow:1px,1px,5px,1px;bor:15px,15px,15px,15px;"
+								data-frame_0="y:-50px;o:1;"
+								data-frame_1="st:36000;sp:1000;sR:36000;"
+								data-frame_999="o:0;st:40010;sR:3010;"
+								style="z-index:10;background-color:rgba(0,0,0,0.5);"
+							> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-652-layer-4" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:-58px;y:1708px;"
+								data-text="w:normal;"
+								data-dim="w:506px;h:261px;"
+								data-frame_0="x:-50;"
+								data-frame_1="sp:1000;"
+								data-frame_999="o:0;st:w;sR:47000;"
+								style="z-index:21;"
+							><img src="assets/JAMON-COCIDO-PALADINI-removebg-preview.png" alt="" class="tp-rs-img" width="464" height="239" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-652-layer-5" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:190px;y:1780px;"
+								data-text="w:normal;"
+								data-dim="w:670px;h:352px;"
+								data-frame_0="x:-50;"
+								data-frame_1="sp:1000;"
+								data-frame_999="o:0;st:w;sR:47000;"
+								style="z-index:22;"
+							><img src="assets/disfruta-del-delicioso-sabor-y-los-posibles-beneficios-del-queso-tybo-en-barra-removebg-preview.png" alt="" class="tp-rs-img" width="690" height="362" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-652-layer-6" 
+								data-type="shape"
+								data-rsp_ch="on"
+								data-xy="x:58px;y:1583px;"
+								data-text="w:normal;"
+								data-dim="w:969px;h:69px;"
+								data-border="bos:solid;boc:#ffaa00;bow:1px,1px,5px,1px;bor:15px,15px,15px,15px;"
+								data-frame_0="y:-50px;o:1;"
+								data-frame_1="st:40010;sp:1000;sR:40010;"
+								data-frame_999="o:0;st:44000;sR:2990;"
+								style="z-index:9;background-color:rgba(0,0,0,0.5);"
+							> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-652-layer-8" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:115px;y:314px;"
+								data-text="w:normal;"
+								data-dim="w:871px;h:466px;"
+								data-frame_0="x:-50;"
+								data-frame_1="st:3770;sp:1000;sR:3770;"
+								data-frame_999="x:50;o:0;st:7510;sp:1000;sR:2740;"
+								data-loop_999="sX:0.9;sY:0.9;sp:10000;e:power2.inOut;yys:t;yyf:t;"
+								style="z-index:37;"
+							><img src="assets/fugazzetta.png" alt="" class="tp-rs-img" width="936" height="501" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-652-layer-9" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:115px;y:314px;"
+								data-text="w:normal;"
+								data-dim="w:871px;h:479px;"
+								data-frame_0="x:-50;"
+								data-frame_1="st:8020;sp:1000;sR:8020;"
+								data-frame_999="x:50;o:0;st:11470;sp:1000;sR:2450;"
+								data-loop_999="sX:0.9;sY:0.9;sp:10000;e:power2.inOut;yys:t;yyf:t;"
+								style="z-index:36;"
+							><img src="assets/anchoas.png" alt="" class="tp-rs-img" width="941" height="517" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-652-layer-10" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:384px;y:-23px;"
+								data-text="w:normal;"
+								data-dim="w:735px;h:288px;"
+								data-frame_0="x:-50;"
+								data-frame_1="sp:1000;"
+								data-frame_999="o:0;st:w;sR:47000;"
+								style="z-index:23;"
+							><img src="assets/cuadro-nombre.png" alt="" class="tp-rs-img" width="735" height="288" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-652-layer-11" 
+								data-type="text"
+								data-color="#bcbcbc"
+								data-rsp_ch="on"
+								data-xy="x:104px;y:836px;"
+								data-text="w:normal;s:47;l:74;fw:200;"
+								data-frame_999="o:0;st:w;sR:47700;"
+								style="z-index:25;font-family:'Barlow Condensed';"
+							>Muzarella <br />
+Fugazzeta <br />
+Anchoas <br />
+Especial <br />
+Napolitana <br />
+Albahaca <br />
+Cuatro Quesos <br />
+Ternera <br />
+Calabresa <br />
+Rúcula <br />
+Atún <br />
+Ananá  
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-652-layer-12" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:115px;y:314px;"
+								data-text="w:normal;"
+								data-dim="w:871px;h:468px;"
+								data-frame_0="x:-50;"
+								data-frame_1="sp:1000;"
+								data-frame_999="x:50;o:0;st:3270;sp:1000;sR:2270;"
+								data-loop_999="sX:0.9;sY:0.9;sp:10000;e:power2.inOut;yys:t;yyf:t;"
+								style="z-index:38;"
+							><img src="assets/comun2.png" alt="" class="tp-rs-img" width="930" height="500" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-652-layer-13" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:115px;y:314px;"
+								data-text="w:normal;"
+								data-dim="w:871px;h:498px;"
+								data-frame_0="x:-50;"
+								data-frame_1="st:11960;sp:1000;sR:11960;"
+								data-frame_999="x:50;o:0;st:15510;sp:1000;sR:2550;"
+								data-loop_999="sX:0.9;sY:0.9;sp:10000;e:power2.inOut;yys:t;yyf:t;"
+								style="z-index:35;"
+							><img src="assets/especial.png" alt="" class="tp-rs-img" width="934" height="534" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-652-layer-14" 
+								data-type="text"
+								data-color="#ffffff"
+								data-rsp_ch="on"
+								data-xy="x:879px;y:838px;"
+								data-text="w:normal;s:47;l:74;"
+								data-dim="w:615px;"
+								data-frame_999="o:0;st:w;sR:47700;"
+								style="z-index:26;font-family:'Barlow Condensed';"
+							>$8000<br />
+$8500<br />
+$12000<br />
+$10000<br />
+$9500<br />
+$10500<br />
+$12000<br />
+$13000<br />
+$12000<br />
+$14000<br />
+$12000<br />
+$16000<br />
+ 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-652-layer-15" 
+								data-type="shape"
+								data-rsp_ch="on"
+								data-xy="x:58px;y:843px;"
+								data-text="w:normal;"
+								data-dim="w:969px;h:69px;"
+								data-border="bos:solid;boc:#ffaa00;bow:1px,1px,5px,1px;bor:15px,15px,15px,15px;"
+								data-frame_999="o:0;st:4010;sR:3710;"
+								style="z-index:19;background-color:rgba(0,0,0,0.5);"
+							> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-652-layer-16" 
+								data-type="shape"
+								data-rsp_ch="on"
+								data-xy="x:58px;y:917px;"
+								data-text="w:normal;"
+								data-dim="w:969px;h:69px;"
+								data-border="bos:solid;boc:#ffaa00;bow:1px,1px,5px,1px;bor:15px,15px,15px,15px;"
+								data-frame_0="y:-50px;o:1;"
+								data-frame_1="st:4010;sp:1000;sR:4010;"
+								data-frame_999="o:0;st:8010;sR:3000;"
+								style="z-index:18;background-color:rgba(0,0,0,0.5);"
+							> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-652-layer-17" 
+								data-type="shape"
+								data-rsp_ch="on"
+								data-xy="x:58px;y:991px;"
+								data-text="w:normal;"
+								data-dim="w:969px;h:69px;"
+								data-border="bos:solid;boc:#ffaa00;bow:1px,1px,5px,1px;bor:15px,15px,15px,15px;"
+								data-frame_0="y:-50px;o:1;"
+								data-frame_1="st:8010;sp:1000;sR:8010;"
+								data-frame_999="o:0;st:12010;sR:3000;"
+								style="z-index:17;background-color:rgba(0,0,0,0.5);"
+							> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-652-layer-18" 
+								data-type="shape"
+								data-rsp_ch="on"
+								data-xy="x:58px;y:1065px;"
+								data-text="w:normal;"
+								data-dim="w:969px;h:69px;"
+								data-border="bos:solid;boc:#ffaa00;bow:1px,1px,5px,1px;bor:15px,15px,15px,15px;"
+								data-frame_0="y:-50px;o:1;"
+								data-frame_1="st:12010;sp:1000;sR:12010;"
+								data-frame_999="o:0;st:16010;sR:3000;"
+								style="z-index:16;background-color:rgba(0,0,0,0.5);"
+							> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-652-layer-19" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:115px;y:314px;"
+								data-text="w:normal;"
+								data-dim="w:871px;h:481px;"
+								data-frame_0="x:-50;"
+								data-frame_1="st:16000;sp:1000;sR:16000;"
+								data-frame_999="x:50;o:0;st:19560;sp:1000;sR:2560;"
+								data-loop_999="sX:0.9;sY:0.9;sp:10000;e:power2.inOut;yys:t;yyf:t;"
+								style="z-index:34;"
+							><img src="assets/napolitana.png" alt="" class="tp-rs-img" width="941" height="520" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-652-layer-20" 
+								data-type="shape"
+								data-rsp_ch="on"
+								data-xy="x:58px;y:1139px;"
+								data-text="w:normal;"
+								data-dim="w:969px;h:69px;"
+								data-border="bos:solid;boc:#ffaa00;bow:1px,1px,5px,1px;bor:15px,15px,15px,15px;"
+								data-frame_0="y:-50px;o:1;"
+								data-frame_1="st:16010;sp:1000;sR:16010;"
+								data-frame_999="o:0;st:20010;sR:3000;"
+								style="z-index:15;background-color:rgba(0,0,0,0.5);"
+							> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-652-layer-21" 
+								data-type="shape"
+								data-rsp_ch="on"
+								data-xy="x:58px;y:1213px;"
+								data-text="w:normal;"
+								data-dim="w:969px;h:69px;"
+								data-border="bos:solid;boc:#ffaa00;bow:1px,1px,5px,1px;bor:15px,15px,15px,15px;"
+								data-frame_0="y:-50px;o:1;"
+								data-frame_1="st:20010;sp:1000;sR:20010;"
+								data-frame_999="o:0;st:24010;sR:3000;"
+								style="z-index:14;background-color:rgba(0,0,0,0.5);"
+							> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-652-layer-22" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:115px;y:314px;"
+								data-text="w:normal;"
+								data-dim="w:871px;h:450px;"
+								data-frame_0="x:-50;"
+								data-frame_1="st:20010;sp:1000;sR:20010;"
+								data-frame_999="x:50;o:0;st:23500;sp:1000;sR:2490;"
+								data-loop_999="sX:0.9;sY:0.9;sp:10000;e:power2.inOut;yys:t;yyf:t;"
+								style="z-index:33;"
+							><img src="assets/pizza-de-albaca.png" alt="" class="tp-rs-img" width="988" height="510" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-652-layer-23" 
+								data-type="shape"
+								data-rsp_ch="on"
+								data-xy="x:58px;y:1287px;"
+								data-text="w:normal;"
+								data-dim="w:969px;h:69px;"
+								data-border="bos:solid;boc:#ffaa00;bow:1px,1px,5px,1px;bor:15px,15px,15px,15px;"
+								data-frame_0="y:-50px;o:1;"
+								data-frame_1="st:24010;sp:1000;sR:24010;"
+								data-frame_999="o:0;st:28010;sR:3000;"
+								style="z-index:13;background-color:rgba(0,0,0,0.5);"
+							> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-652-layer-24" 
+								data-type="shape"
+								data-rsp_ch="on"
+								data-xy="x:58px;y:1361px;"
+								data-text="w:normal;"
+								data-dim="w:969px;h:69px;"
+								data-border="bos:solid;boc:#ffaa00;bow:1px,1px,5px,1px;bor:15px,15px,15px,15px;"
+								data-frame_0="y:-50px;o:1;"
+								data-frame_1="st:28000;sp:1000;sR:28000;"
+								data-frame_999="o:0;st:32010;sR:3010;"
+								style="z-index:12;background-color:rgba(0,0,0,0.5);"
+							> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-652-layer-25" 
+								data-type="shape"
+								data-rsp_ch="on"
+								data-xy="x:58px;y:1657px;"
+								data-text="w:normal;"
+								data-dim="w:969px;h:69px;"
+								data-border="bos:solid;boc:#ffaa00;bow:1px,1px,5px,1px;bor:15px,15px,15px,15px;"
+								data-frame_0="y:-50px;o:1;"
+								data-frame_1="st:44000;sp:1000;sR:44000;"
+								data-frame_999="o:0;st:w;sR:3000;"
+								style="z-index:8;background-color:rgba(0,0,0,0.5);"
+							> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-652-layer-26" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:115px;y:314px;"
+								data-text="w:normal;"
+								data-dim="w:871px;h:470px;"
+								data-frame_0="x:-50;"
+								data-frame_1="st:24010;sp:1000;sR:24010;"
+								data-frame_999="x:50;o:0;st:27510;sp:1000;sR:2500;"
+								data-loop_999="sX:0.9;sY:0.9;sp:10000;e:power2.inOut;yys:t;yyf:t;"
+								style="z-index:32;"
+							><img src="assets/4-quesos.png" alt="" class="tp-rs-img" width="934" height="504" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-652-layer-27" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:115px;y:314px;"
+								data-text="w:normal;"
+								data-dim="w:871px;h:482px;"
+								data-frame_0="x:-50;"
+								data-frame_1="st:28000;sp:1000;sR:28000;"
+								data-frame_999="x:50;o:0;st:31510;sp:1000;sR:2510;"
+								data-loop_999="sX:0.9;sY:0.9;sp:10000;e:power2.inOut;yys:t;yyf:t;"
+								style="z-index:31;"
+							><img src="assets/ternera-4.png" alt="" class="tp-rs-img" width="932" height="516" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-652-layer-28" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:115px;y:314px;"
+								data-text="w:normal;"
+								data-dim="w:871px;h:441px;"
+								data-frame_0="x:-50;"
+								data-frame_1="st:32080;sp:1000;sR:32080;"
+								data-frame_999="x:50;o:0;st:35500;sp:1000;sR:2420;"
+								data-loop_999="sX:0.9;sY:0.9;sp:10000;e:power2.inOut;yys:t;yyf:t;"
+								style="z-index:30;"
+							><img src="assets/calabresa-2.png" alt="" class="tp-rs-img" width="973" height="493" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-652-layer-29" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:115px;y:314px;"
+								data-text="w:normal;"
+								data-dim="w:871px;h:510px;"
+								data-frame_0="x:-50;"
+								data-frame_1="st:35990;sp:1000;sR:35990;"
+								data-frame_999="x:50;o:0;st:39510;sp:1000;sR:2520;"
+								data-loop_999="sX:0.9;sY:0.9;sp:10000;e:power2.inOut;yys:t;yyf:t;"
+								style="z-index:29;"
+							><img src="assets/pizza-rucula.png" alt="" class="tp-rs-img" width="939" height="550" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-652-layer-30" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:115px;y:314px;"
+								data-text="w:normal;"
+								data-dim="w:871px;h:470px;"
+								data-frame_0="x:-50;"
+								data-frame_1="st:40020;sp:1000;sR:40020;"
+								data-frame_999="x:50;o:0;st:43500;sp:1000;sR:2480;"
+								data-loop_999="sX:0.9;sY:0.9;sp:10000;e:power2.inOut;yys:t;yyf:t;"
+								style="z-index:28;"
+							><img src="assets/atun.png" alt="" class="tp-rs-img" width="934" height="504" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-652-layer-31" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:115px;y:314px;"
+								data-text="w:normal;"
+								data-dim="w:871px;h:467px;"
+								data-frame_0="x:-50;"
+								data-frame_1="st:44050;sp:1000;sR:44050;"
+								data-frame_999="x:50;o:0;st:w;sR:2950;"
+								data-loop_999="sX:0.9;sY:0.9;sp:10000;e:power2.inOut;yys:t;yyf:t;"
+								style="z-index:27;"
+							><img src="assets/anana-2.png" alt="" class="tp-rs-img" width="940" height="504" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-652-layer-35" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:r;xo:60px;y:b;yo:60px;"
+								data-text="w:normal;"
+								data-dim="w:130px;h:130px;"
+								data-actions='o:click;a:jumptoslide;slide:rs-650;'
+								data-frame_0="x:right;"
+								data-frame_1="st:440;sp:1000;sR:440;"
+								data-frame_999="x:right;o:0;st:9000;sp:1000;sR:7560;"
+								style="z-index:16;"
+							><img src="assets/volver.png" alt="" class="tp-rs-img" width="92" height="92" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-652-layer-50" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:r;xo:60px;y:b;yo:60px;"
+								data-text="w:normal;"
+								data-dim="w:130px;h:130px;"
+								data-actions='o:click;a:jumptoslide;slide:rs-571;||o:click;a:playvideo;layer:slider-123-slide-652-layer-61;'
+								data-frame_0="x:right;"
+								data-frame_1="st:440;sp:1000;sR:440;"
+								data-frame_999="x:right;o:0;st:9000;sp:1000;sR:7560;"
+								style="z-index:16;"
+							><img src="assets/volver.png" alt="" class="tp-rs-img" width="92" height="92" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-652-layer-51" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:r;xo:60px;y:b;yo:60px;"
+								data-text="w:normal;"
+								data-dim="w:130px;h:130px;"
+								data-actions='o:click;a:jumptoslide;slide:rs-650;||o:click;a:playvideo;layer:slider-123-slide-652-layer-52;'
+								data-frame_0="x:right;"
+								data-frame_1="st:440;sp:1000;sR:440;"
+								data-frame_999="x:right;o:0;st:w;sp:1000;sR:46560;"
+								style="z-index:16;"
+							><img src="assets/volver.png" alt="" class="tp-rs-img" width="92" height="92" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-652-layer-52" 
+								class="rs-layer-audio rs-layer-hidden"
+								data-type="audio"
+								data-rsp_ch="on"
+								data-xy="x:50px;y:50px;"
+								data-text="w:normal;"
+								data-dim="w:54;h:54;"
+								data-video="w:54;h:54;p:auto;ap:false;nse:false;l:false;vd:100;ptimer:false;"
+								data-mp4="assets/tukin.mp3"
+								data-frame_999="o:0;st:9000;sR:8700;"
+								style="z-index:18;"
+							> 
+							</rs-layer><!--
+-->						</rs-slide>
+						<rs-slide style="position: absolute;" data-key="rs-653" data-title="Ternera" data-duration="36000ms" data-ssop="true" data-in="o:0;" data-out="a:false;">
+							<img src="assets/Fondo.jpg" alt="" title="Fondo" width="1080" height="1920" class="rev-slidebg tp-rs-img" data-bg="f:contain;" data-no-retina>
+<!--
+							--><rs-layer
+								id="slider-123-slide-653-layer-0" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:74px;y:56px;"
+								data-text="w:normal;"
+								data-dim="w:221px;h:230px;"
+								data-frame_0="x:-50;"
+								data-frame_1="sp:1000;"
+								data-frame_999="o:0;st:w;sR:35000;"
+								style="z-index:26;"
+							><img src="assets/logo-club-del-miga.png" alt="" class="tp-rs-img" width="412" height="428" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-653-layer-1" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:c;y:442px;"
+								data-text="w:normal;"
+								data-dim="w:882px;h:480px;"
+								data-frame_0="y:top;"
+								data-frame_1="st:16010;sp:1000;sR:16010;"
+								data-frame_999="o:0;st:20010;sR:3000;"
+								data-loop_999="sX:0.9;sY:0.9;sp:10000;e:power2.inOut;yys:t;yyf:t;"
+								style="z-index:17;"
+							><img src="assets/ternera-queso-morron-aceitunas-y-huevo.png" alt="" class="tp-rs-img" width="918" height="500" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-653-layer-2" 
+								data-type="text"
+								data-color="#0c0c0c"
+								data-rsp_ch="on"
+								data-xy="x:558px;y:87px;"
+								data-text="w:normal;s:125;fw:700;"
+								data-btrans="rZ:-10;"
+								data-frame_999="o:0;st:w;sR:35700;"
+								style="z-index:30;font-family:'Barlow Condensed';"
+							>Ternera 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-653-layer-3" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:c;y:401px;"
+								data-text="w:normal;"
+								data-dim="w:846px;h:495px;"
+								data-frame_0="y:top;"
+								data-frame_1="st:20010;sp:1000;sR:20010;"
+								data-frame_999="o:0;st:24010;sR:3000;"
+								data-loop_999="sX:0.9;sY:0.9;sp:10000;e:power2.inOut;yys:t;yyf:t;"
+								style="z-index:15;"
+							><img src="assets/ternera-tomate.png" alt="" class="tp-rs-img" width="772" height="452" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-653-layer-4" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:-43px;y:1727px;"
+								data-text="w:normal;"
+								data-dim="w:645px;h:334px;"
+								data-frame_0="x:-50;"
+								data-frame_1="sp:1000;"
+								data-frame_999="o:0;st:w;sR:35000;"
+								style="z-index:27;"
+							><img src="assets/ternera-1.png" alt="" class="tp-rs-img" width="645" height="334" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-653-layer-5" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:376px;y:1776px;"
+								data-text="w:normal;"
+								data-dim="w:275px;h:226.997px;"
+								data-frame_0="x:-50;"
+								data-frame_1="sp:1000;"
+								data-frame_999="o:0;st:w;sR:35000;"
+								style="z-index:28;"
+							><img src="assets/tomate-cherry.png" alt="" class="tp-rs-img" width="342" height="282" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-653-layer-6" 
+								data-type="text"
+								data-color="#ffffff"
+								data-rsp_ch="on"
+								data-xy="x:809px;y:1000px;"
+								data-text="w:normal;"
+								data-frame_999="o:0;st:w;sR:35700;"
+								style="z-index:33;font-family:'Roboto';"
+							> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-653-layer-7" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:c;y:384px;"
+								data-text="w:normal;"
+								data-dim="w:787px;h:512px;"
+								data-frame_0="y:top;"
+								data-frame_1="st:24010;sp:1000;sR:24010;"
+								data-frame_999="o:0;st:28010;sR:3000;"
+								data-loop_999="sX:0.9;sY:0.9;sp:10000;e:power2.inOut;yys:t;yyf:t;"
+								style="z-index:13;"
+							><img src="assets/ternera-tomate-lechuga-y-huevo.png" alt="" class="tp-rs-img" width="838" height="545" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-653-layer-8" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:c;y:440px;"
+								data-text="w:normal;"
+								data-dim="w:787px;h:396px;"
+								data-frame_0="y:top;"
+								data-frame_1="st:28000;sp:1000;sR:28000;"
+								data-frame_999="o:0;st:32010;sR:3010;"
+								data-loop_999="sX:0.9;sY:0.9;sp:10000;e:power2.inOut;yys:t;yyf:t;"
+								style="z-index:11;"
+							><img src="assets/ternera-roquefort.png" alt="" class="tp-rs-img" width="846" height="426" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-653-layer-9" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:c;y:420px;"
+								data-text="w:normal;"
+								data-dim="w:906px;h:397px;"
+								data-frame_0="y:top;"
+								data-frame_1="st:32000;sp:1000;sR:32000;"
+								data-frame_999="o:0;st:w;sR:3000;"
+								data-loop_999="sX:0.9;sY:0.9;sp:10000;e:power2.inOut;yys:t;yyf:t;"
+								style="z-index:9;"
+							><img src="assets/ternera-mostaza-tomate-huevo-ciboulette-1.png" alt="" class="tp-rs-img" width="946" height="415" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-653-layer-10" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:384px;y:-23px;"
+								data-text="w:normal;"
+								data-dim="w:735px;h:288px;"
+								data-frame_0="x:-50;"
+								data-frame_1="sp:1000;"
+								data-frame_999="o:0;st:w;sR:35000;"
+								style="z-index:29;"
+							><img src="assets/cuadro-nombre.png" alt="" class="tp-rs-img" width="735" height="288" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-653-layer-11" 
+								data-type="text"
+								data-color="#bcbcbc"
+								data-rsp_ch="on"
+								data-xy="x:104px;y:984px;"
+								data-text="w:normal;s:47;l:74;fw:200;"
+								data-frame_999="o:0;st:w;sR:35700;"
+								style="z-index:31;font-family:'Barlow Condensed';"
+							>Ternera y Queso<br />
+Ternera, Queso y Huevo<br />
+Ternera, Queso, Tomate y Huevo<br />
+Ternera y Lechuga<br />
+Ternera, Queso, Morrón, Aceituna y Huevo <br />
+Ternera y Tomate<br />
+Ternera, Tomate, Lechuga y Huevo<br />
+Ternera y Roquefort<br />
+Ternera, Mostaza, Tomate, Huevo y Ciboulette<br />
+ 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-653-layer-12" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:101px;y:465px;"
+								data-text="w:normal;"
+								data-dim="w:882px;h:352px;"
+								data-frame_0="y:top;"
+								data-frame_1="sp:1000;"
+								data-frame_999="o:0;st:4010;sR:3010;"
+								data-loop_999="sX:0.9;sY:0.9;sp:10000;e:power2.inOut;yys:t;yyf:t;"
+								style="z-index:25;"
+							><img src="assets/ternera-queso.png" alt="" class="tp-rs-img" width="963" height="384" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-653-layer-14" 
+								data-type="text"
+								data-color="#ffffff"
+								data-rsp_ch="on"
+								data-xy="x:879px;y:984px;"
+								data-text="w:normal;s:47;l:74;"
+								data-dim="w:127px;"
+								data-frame_999="o:0;st:w;sR:35700;"
+								style="z-index:32;font-family:'Barlow Condensed';"
+							>$3500<br />
+$4000<br />
+$4800<br />
+$3500<br />
+$5000<br />
+$4500<br />
+$4000<br />
+$4800<br />
+$5000<br />
+ 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-653-layer-15" 
+								data-type="shape"
+								data-rsp_ch="on"
+								data-xy="x:58px;y:990px;"
+								data-text="w:normal;"
+								data-dim="w:969px;h:69px;"
+								data-border="bos:solid;boc:#ffaa00;bow:1px,1px,5px,1px;bor:15px,15px,15px,15px;"
+								data-frame_999="o:0;st:4010;sR:3710;"
+								style="z-index:24;background-color:rgba(0,0,0,0.5);"
+							> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-653-layer-16" 
+								data-type="shape"
+								data-rsp_ch="on"
+								data-xy="x:58px;y:1064px;"
+								data-text="w:normal;"
+								data-dim="w:969px;h:69px;"
+								data-border="bos:solid;boc:#ffaa00;bow:1px,1px,5px,1px;bor:15px,15px,15px,15px;"
+								data-frame_0="y:-50px;o:1;"
+								data-frame_1="st:4010;sp:1000;sR:4010;"
+								data-frame_999="o:0;st:8010;sR:3000;"
+								style="z-index:22;background-color:rgba(0,0,0,0.5);"
+							> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-653-layer-17" 
+								data-type="shape"
+								data-rsp_ch="on"
+								data-xy="x:58px;y:1138px;"
+								data-text="w:normal;"
+								data-dim="w:969px;h:69px;"
+								data-border="bos:solid;boc:#ffaa00;bow:1px,1px,5px,1px;bor:15px,15px,15px,15px;"
+								data-frame_0="y:-50px;o:1;"
+								data-frame_1="st:8010;sp:1000;sR:8010;"
+								data-frame_999="o:0;st:12010;sR:3000;"
+								style="z-index:20;background-color:rgba(0,0,0,0.5);"
+							> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-653-layer-18" 
+								data-type="shape"
+								data-rsp_ch="on"
+								data-xy="x:58px;y:1212px;"
+								data-text="w:normal;"
+								data-dim="w:969px;h:69px;"
+								data-border="bos:solid;boc:#ffaa00;bow:1px,1px,5px,1px;bor:15px,15px,15px,15px;"
+								data-frame_0="y:-50px;o:1;"
+								data-frame_1="st:12010;sp:1000;sR:12010;"
+								data-frame_999="o:0;st:16010;sR:3000;"
+								style="z-index:18;background-color:rgba(0,0,0,0.5);"
+							> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-653-layer-20" 
+								data-type="shape"
+								data-rsp_ch="on"
+								data-xy="x:58px;y:1286px;"
+								data-text="w:normal;"
+								data-dim="w:969px;h:69px;"
+								data-border="bos:solid;boc:#ffaa00;bow:1px,1px,5px,1px;bor:15px,15px,15px,15px;"
+								data-frame_0="y:-50px;o:1;"
+								data-frame_1="st:16010;sp:1000;sR:16010;"
+								data-frame_999="o:0;st:20010;sR:3000;"
+								style="z-index:16;background-color:rgba(0,0,0,0.5);"
+							> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-653-layer-21" 
+								data-type="shape"
+								data-rsp_ch="on"
+								data-xy="x:58px;y:1360px;"
+								data-text="w:normal;"
+								data-dim="w:969px;h:69px;"
+								data-border="bos:solid;boc:#ffaa00;bow:1px,1px,5px,1px;bor:15px,15px,15px,15px;"
+								data-frame_0="y:-50px;o:1;"
+								data-frame_1="st:20010;sp:1000;sR:20010;"
+								data-frame_999="o:0;st:24010;sR:3000;"
+								style="z-index:14;background-color:rgba(0,0,0,0.5);"
+							> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-653-layer-23" 
+								data-type="shape"
+								data-rsp_ch="on"
+								data-xy="x:58px;y:1434px;"
+								data-text="w:normal;"
+								data-dim="w:969px;h:69px;"
+								data-border="bos:solid;boc:#ffaa00;bow:1px,1px,5px,1px;bor:15px,15px,15px,15px;"
+								data-frame_0="y:-50px;o:1;"
+								data-frame_1="st:24010;sp:1000;sR:24010;"
+								data-frame_999="o:0;st:28010;sR:3000;"
+								style="z-index:12;background-color:rgba(0,0,0,0.5);"
+							> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-653-layer-24" 
+								data-type="shape"
+								data-rsp_ch="on"
+								data-xy="x:58px;y:1508px;"
+								data-text="w:normal;"
+								data-dim="w:969px;h:69px;"
+								data-border="bos:solid;boc:#ffaa00;bow:1px,1px,5px,1px;bor:15px,15px,15px,15px;"
+								data-frame_0="y:-50px;o:1;"
+								data-frame_1="st:28000;sp:1000;sR:28000;"
+								data-frame_999="o:0;st:32010;sR:3010;"
+								style="z-index:10;background-color:rgba(0,0,0,0.5);"
+							> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-653-layer-25" 
+								data-type="shape"
+								data-rsp_ch="on"
+								data-xy="x:58px;y:1582px;"
+								data-text="w:normal;"
+								data-dim="w:969px;h:69px;"
+								data-border="bos:solid;boc:#ffaa00;bow:1px,1px,5px,1px;bor:15px,15px,15px,15px;"
+								data-frame_0="y:-50px;o:1;"
+								data-frame_1="st:32000;sp:1000;sR:32000;"
+								data-frame_999="o:0;st:w;sR:3000;"
+								style="z-index:8;background-color:rgba(0,0,0,0.5);"
+							> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-653-layer-31" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:101px;y:465px;"
+								data-text="w:normal;"
+								data-dim="w:882px;h:400px;"
+								data-frame_0="y:top;"
+								data-frame_1="st:4010;sp:1000;sR:4010;"
+								data-frame_999="o:0;st:8010;sR:3000;"
+								data-loop_999="sX:0.9;sY:0.9;sp:10000;e:power2.inOut;yys:t;yyf:t;"
+								style="z-index:23;"
+							><img src="assets/ternera-queso-huevo.png" alt="" class="tp-rs-img" width="938" height="425" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-653-layer-32" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:101px;y:465px;"
+								data-text="w:normal;"
+								data-dim="w:882px;h:465px;"
+								data-frame_0="y:top;"
+								data-frame_1="st:8010;sp:1000;sR:8010;"
+								data-frame_999="o:0;st:12010;sR:3000;"
+								data-loop_999="sX:0.9;sY:0.9;sp:10000;e:power2.inOut;yys:t;yyf:t;"
+								style="z-index:21;"
+							><img src="assets/ternera-queso-tomate-y-huevo.png" alt="" class="tp-rs-img" width="805" height="424" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-653-layer-33" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:c;y:442px;"
+								data-text="w:normal;"
+								data-dim="w:882px;h:449px;"
+								data-frame_0="y:top;"
+								data-frame_1="st:12010;sp:1000;sR:12010;"
+								data-frame_999="o:0;st:16010;sR:3000;"
+								data-loop_999="sX:0.9;sY:0.9;sp:10000;e:power2.inOut;yys:t;yyf:t;"
+								style="z-index:19;"
+							><img src="assets/ternera-Lechuga-2.png" alt="" class="tp-rs-img" width="781" height="398" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-653-layer-36" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:r;xo:60px;y:b;yo:60px;"
+								data-text="w:normal;"
+								data-dim="w:130px;h:130px;"
+								data-actions='o:click;a:jumptoslide;slide:rs-651;||o:click;a:playvideo;layer:slider-123-slide-653-layer-53;'
+								data-frame_0="x:right;"
+								data-frame_1="st:440;sp:1000;sR:440;"
+								data-frame_999="x:right;o:0;st:w;sp:1000;sR:34560;"
+								style="z-index:16;"
+							><img src="assets/volver.png" alt="" class="tp-rs-img" width="92" height="92" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-653-layer-53" 
+								class="rs-layer-audio rs-layer-hidden"
+								data-type="audio"
+								data-rsp_ch="on"
+								data-xy="x:50px;y:50px;"
+								data-text="w:normal;"
+								data-dim="w:54;h:54;"
+								data-video="w:54;h:54;p:auto;ap:false;nse:false;l:false;vd:100;ptimer:false;"
+								data-mp4="assets/tukin.mp3"
+								data-frame_999="o:0;st:9000;sR:8700;"
+								style="z-index:18;"
+							> 
+							</rs-layer><!--
+-->						</rs-slide>
+						<rs-slide style="position: absolute;" data-key="rs-654" data-title="Pollo" data-duration="24000ms" data-ssop="true" data-in="o:0;" data-out="a:false;">
+							<img src="assets/Fondo.jpg" alt="" title="Fondo" width="1080" height="1920" class="rev-slidebg tp-rs-img" data-bg="f:contain;" data-no-retina>
+<!--
+							--><rs-layer
+								id="slider-123-slide-654-layer-0" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:74px;y:56px;"
+								data-text="w:normal;"
+								data-dim="w:221px;h:230px;"
+								data-frame_0="x:-50;"
+								data-frame_1="sp:1000;"
+								data-frame_999="o:0;st:w;sR:23000;"
+								style="z-index:20;"
+							><img src="assets/logo-club-del-miga.png" alt="" class="tp-rs-img" width="412" height="428" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-654-layer-1" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:c;y:401px;"
+								data-text="w:normal;"
+								data-dim="w:882px;h:455px;"
+								data-frame_0="y:top;"
+								data-frame_1="st:16010;sp:1000;sR:16010;"
+								data-frame_999="o:0;st:20010;sR:3000;"
+								data-loop_999="sX:0.9;sY:0.9;sp:10000;e:power2.inOut;yys:t;yyf:t;"
+								style="z-index:11;"
+							><img src="assets/Pollo-tomate-huevo-ciboulette-moztaza.png" alt="" class="tp-rs-img" width="914" height="472" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-654-layer-2" 
+								data-type="text"
+								data-color="#0c0c0c"
+								data-rsp_ch="on"
+								data-xy="x:609px;y:87px;"
+								data-text="w:normal;s:125;fw:700;"
+								data-btrans="rZ:-10;"
+								data-frame_999="o:0;st:w;sR:23700;"
+								style="z-index:24;font-family:'Barlow Condensed';"
+							>Pollo 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-654-layer-3" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:c;y:401px;"
+								data-text="w:normal;"
+								data-dim="w:846px;h:430px;"
+								data-frame_0="y:top;"
+								data-frame_1="st:20010;sp:1000;sR:20010;"
+								data-frame_999="o:0;st:w;sR:2990;"
+								data-loop_999="sX:0.9;sY:0.9;sp:10000;e:power2.inOut;yys:t;yyf:t;"
+								style="z-index:9;"
+							><img src="assets/Pollo-queso-morron.png" alt="" class="tp-rs-img" width="823" height="418" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-654-layer-4" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:-43px;y:1727px;"
+								data-text="w:normal;"
+								data-dim="w:721px;h:217px;"
+								data-frame_0="x:-50;"
+								data-frame_1="sp:1000;"
+								data-frame_999="o:0;st:w;sR:23000;"
+								style="z-index:22;"
+							><img src="assets/el-pollo-de-abajo-socalo.png" alt="" class="tp-rs-img" width="721" height="217" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-654-layer-5" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:206px;y:1725px;"
+								data-text="w:normal;"
+								data-dim="w:275px;h:226.997px;"
+								data-frame_0="x:-50;"
+								data-frame_1="sp:1000;"
+								data-frame_999="o:0;st:w;sR:23000;"
+								style="z-index:21;"
+							><img src="assets/tomate-cherry.png" alt="" class="tp-rs-img" width="342" height="282" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-654-layer-10" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:384px;y:-23px;"
+								data-text="w:normal;"
+								data-dim="w:735px;h:288px;"
+								data-frame_0="x:-50;"
+								data-frame_1="sp:1000;"
+								data-frame_999="o:0;st:w;sR:23000;"
+								style="z-index:23;"
+							><img src="assets/cuadro-nombre.png" alt="" class="tp-rs-img" width="735" height="288" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-654-layer-11" 
+								data-type="text"
+								data-color="#bcbcbc"
+								data-rsp_ch="on"
+								data-xy="x:104px;y:984px;"
+								data-text="w:normal;s:47;l:74;fw:200;"
+								data-frame_999="o:0;st:w;sR:23700;"
+								style="z-index:25;font-family:'Barlow Condensed';"
+							>Pollo, Palmitos, Morrón, Huevo<br />
+Pollo, Tomate, Lechuga, Huevo y Aceitunas<br />
+Pollo, Roquefort, Ají Amarillo y Tomate<br />
+Pollo, Berenjena, Morrón y Huevo<br />
+Pollo, Tomate, Huevo, Ciboulette, Mostaza <br />
+Pollo, Queso, Morrón 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-654-layer-12" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:c;y:374px;"
+								data-text="w:normal;"
+								data-dim="w:882px;h:444px;"
+								data-frame_0="y:top;"
+								data-frame_1="sp:1000;"
+								data-frame_999="o:0;st:4010;sR:3010;"
+								data-loop_999="sX:0.9;sY:0.9;sp:10000;e:power2.inOut;yys:t;yyf:t;"
+								style="z-index:19;"
+							><img src="assets/Pollo-palmitos-morron-huevo.png" alt="" class="tp-rs-img" width="845" height="425" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-654-layer-14" 
+								data-type="text"
+								data-color="#ffffff"
+								data-rsp_ch="on"
+								data-xy="x:880px;y:984px;"
+								data-text="w:normal;s:47;l:74;"
+								data-dim="w:532px;"
+								data-frame_999="o:0;st:w;sR:23700;"
+								style="z-index:26;font-family:'Barlow Condensed';"
+							>$6000<br />
+$4500<br />
+$5000<br />
+$5500<br />
+$5000<br />
+$5500<br />
+<br />
+ 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-654-layer-15" 
+								data-type="shape"
+								data-rsp_ch="on"
+								data-xy="x:58px;y:990px;"
+								data-text="w:normal;"
+								data-dim="w:969px;h:69px;"
+								data-border="bos:solid;boc:#ffaa00;bow:1px,1px,5px,1px;bor:15px,15px,15px,15px;"
+								data-frame_999="o:0;st:4010;sR:3710;"
+								style="z-index:18;background-color:rgba(0,0,0,0.5);"
+							> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-654-layer-16" 
+								data-type="shape"
+								data-rsp_ch="on"
+								data-xy="x:58px;y:1064px;"
+								data-text="w:normal;"
+								data-dim="w:969px;h:69px;"
+								data-border="bos:solid;boc:#ffaa00;bow:1px,1px,5px,1px;bor:15px,15px,15px,15px;"
+								data-frame_0="y:-50px;o:1;"
+								data-frame_1="st:4010;sp:1000;sR:4010;"
+								data-frame_999="o:0;st:8010;sR:3000;"
+								style="z-index:16;background-color:rgba(0,0,0,0.5);"
+							> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-654-layer-17" 
+								data-type="shape"
+								data-rsp_ch="on"
+								data-xy="x:58px;y:1138px;"
+								data-text="w:normal;"
+								data-dim="w:969px;h:69px;"
+								data-border="bos:solid;boc:#ffaa00;bow:1px,1px,5px,1px;bor:15px,15px,15px,15px;"
+								data-frame_0="y:-50px;o:1;"
+								data-frame_1="st:8010;sp:1000;sR:8010;"
+								data-frame_999="o:0;st:12010;sR:3000;"
+								style="z-index:14;background-color:rgba(0,0,0,0.5);"
+							> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-654-layer-18" 
+								data-type="shape"
+								data-rsp_ch="on"
+								data-xy="x:58px;y:1212px;"
+								data-text="w:normal;"
+								data-dim="w:969px;h:69px;"
+								data-border="bos:solid;boc:#ffaa00;bow:1px,1px,5px,1px;bor:15px,15px,15px,15px;"
+								data-frame_0="y:-50px;o:1;"
+								data-frame_1="st:12010;sp:1000;sR:12010;"
+								data-frame_999="o:0;st:16010;sR:3000;"
+								style="z-index:12;background-color:rgba(0,0,0,0.5);"
+							> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-654-layer-20" 
+								data-type="shape"
+								data-rsp_ch="on"
+								data-xy="x:58px;y:1286px;"
+								data-text="w:normal;"
+								data-dim="w:969px;h:69px;"
+								data-border="bos:solid;boc:#ffaa00;bow:1px,1px,5px,1px;bor:15px,15px,15px,15px;"
+								data-frame_0="y:-50px;o:1;"
+								data-frame_1="st:16010;sp:1000;sR:16010;"
+								data-frame_999="o:0;st:20010;sR:3000;"
+								style="z-index:10;background-color:rgba(0,0,0,0.5);"
+							> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-654-layer-21" 
+								data-type="shape"
+								data-rsp_ch="on"
+								data-xy="x:58px;y:1360px;"
+								data-text="w:normal;"
+								data-dim="w:969px;h:69px;"
+								data-border="bos:solid;boc:#ffaa00;bow:1px,1px,5px,1px;bor:15px,15px,15px,15px;"
+								data-frame_0="y:-50px;o:1;"
+								data-frame_1="st:20010;sp:1000;sR:20010;"
+								data-frame_999="o:0;st:w;sR:2990;"
+								style="z-index:8;background-color:rgba(0,0,0,0.5);"
+							> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-654-layer-31" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:c;y:369px;"
+								data-text="w:normal;"
+								data-dim="w:846px;h:531px;"
+								data-frame_0="y:top;"
+								data-frame_1="st:4010;sp:1000;sR:4010;"
+								data-frame_999="o:0;st:8010;sR:3000;"
+								data-loop_999="sX:0.9;sY:0.9;sp:10000;e:power2.inOut;yys:t;yyf:t;"
+								style="z-index:17;"
+							><img src="assets/Pollo-tomate-lechuga-huevo-aceitunas-1.png" alt="" class="tp-rs-img" width="852" height="535" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-654-layer-32" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:c;y:398px;"
+								data-text="w:normal;"
+								data-dim="w:882px;h:488px;"
+								data-frame_0="y:top;"
+								data-frame_1="st:8010;sp:1000;sR:8010;"
+								data-frame_999="o:0;st:12010;sR:3000;"
+								data-loop_999="sX:0.9;sY:0.9;sp:10000;e:power2.inOut;yys:t;yyf:t;"
+								style="z-index:15;"
+							><img src="assets/Pollo-roquefort-aji-amarillo-tomate-1.png" alt="" class="tp-rs-img" width="963" height="533" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-654-layer-33" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:c;y:376px;"
+								data-text="w:normal;"
+								data-dim="w:882px;h:496px;"
+								data-frame_0="y:top;"
+								data-frame_1="st:12010;sp:1000;sR:12010;"
+								data-frame_999="o:0;st:16010;sR:3000;"
+								data-loop_999="sX:0.9;sY:0.9;sp:10000;e:power2.inOut;yys:t;yyf:t;"
+								style="z-index:13;"
+							><img src="assets/Pollo-berenjena-morron-huevo.png" alt="" class="tp-rs-img" width="872" height="490" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-654-layer-37" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:r;xo:60px;y:b;yo:60px;"
+								data-text="w:normal;"
+								data-dim="w:130px;h:130px;"
+								data-actions='o:click;a:jumptoslide;slide:rs-651;||o:click;a:playvideo;layer:slider-123-slide-654-layer-54;'
+								data-frame_0="x:right;"
+								data-frame_1="st:440;sp:1000;sR:440;"
+								data-frame_999="x:right;o:0;st:w;sp:1000;"
+								style="z-index:16;"
+							><img src="assets/volver.png" alt="" class="tp-rs-img" width="92" height="92" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-654-layer-54" 
+								class="rs-layer-audio rs-layer-hidden"
+								data-type="audio"
+								data-rsp_ch="on"
+								data-xy="x:50px;y:50px;"
+								data-text="w:normal;"
+								data-dim="w:54;h:54;"
+								data-video="w:54;h:54;p:auto;ap:false;nse:false;l:false;vd:100;ptimer:false;"
+								data-mp4="assets/tukin.mp3"
+								data-frame_999="o:0;st:9000;"
+								style="z-index:18;"
+							> 
+							</rs-layer><!--
+-->						</rs-slide>
+						<rs-slide style="position: absolute;" data-key="rs-661" data-title="Jamón" data-duration="48000ms" data-ssop="true" data-in="o:0;" data-out="a:false;">
+							<img src="assets/Fondo.jpg" alt="" title="Fondo" width="1080" height="1920" class="rev-slidebg tp-rs-img" data-bg="f:contain;" data-no-retina>
+<!--
+							--><rs-layer
+								id="slider-123-slide-661-layer-0" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:74px;y:56px;"
+								data-text="w:normal;"
+								data-dim="w:221px;h:230px;"
+								data-frame_0="x:-50;"
+								data-frame_1="sp:1000;"
+								data-frame_999="o:0;st:w;sR:47000;"
+								style="z-index:32;"
+							><img src="assets/logo-club-del-miga.png" alt="" class="tp-rs-img" width="412" height="428" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-661-layer-1" 
+								data-type="shape"
+								data-rsp_ch="on"
+								data-xy="x:58px;y:1435px;"
+								data-text="w:normal;"
+								data-dim="w:969px;h:69px;"
+								data-border="bos:solid;boc:#ffaa00;bow:1px,1px,5px,1px;bor:15px,15px,15px,15px;"
+								data-frame_0="y:-50px;o:1;"
+								data-frame_1="st:32000;sp:1000;sR:32000;"
+								data-frame_999="o:0;st:36010;sR:3010;"
+								style="z-index:14;background-color:rgba(0,0,0,0.5);"
+							> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-661-layer-2" 
+								data-type="text"
+								data-color="#0c0c0c"
+								data-rsp_ch="on"
+								data-xy="x:483px;y:74px;"
+								data-text="w:normal;s:100;fw:700;"
+								data-dim="w:710.012px;"
+								data-btrans="rZ:-10;"
+								data-frame_999="o:0;st:w;sR:47700;"
+								style="z-index:36;font-family:'Barlow Condensed';"
+							>Jamón Cocido 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-661-layer-3" 
+								data-type="shape"
+								data-rsp_ch="on"
+								data-xy="x:58px;y:1509px;"
+								data-text="w:normal;"
+								data-dim="w:969px;h:69px;"
+								data-border="bos:solid;boc:#ffaa00;bow:1px,1px,5px,1px;bor:15px,15px,15px,15px;"
+								data-frame_0="y:-50px;o:1;"
+								data-frame_1="st:36000;sp:1000;sR:36000;"
+								data-frame_999="o:0;st:40010;sR:3010;"
+								style="z-index:12;background-color:rgba(0,0,0,0.5);"
+							> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-661-layer-4" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:-58px;y:1708px;"
+								data-text="w:normal;"
+								data-dim="w:506px;h:261px;"
+								data-frame_0="x:-50;"
+								data-frame_1="sp:1000;"
+								data-frame_999="o:0;st:w;sR:47000;"
+								style="z-index:33;"
+							><img src="assets/JAMON-COCIDO-PALADINI-removebg-preview.png" alt="" class="tp-rs-img" width="464" height="239" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-661-layer-5" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:190px;y:1780px;"
+								data-text="w:normal;"
+								data-dim="w:670px;h:352px;"
+								data-frame_0="x:-50;"
+								data-frame_1="sp:1000;"
+								data-frame_999="o:0;st:w;sR:47000;"
+								style="z-index:34;"
+							><img src="assets/disfruta-del-delicioso-sabor-y-los-posibles-beneficios-del-queso-tybo-en-barra-removebg-preview.png" alt="" class="tp-rs-img" width="690" height="362" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-661-layer-6" 
+								data-type="shape"
+								data-rsp_ch="on"
+								data-xy="x:58px;y:1583px;"
+								data-text="w:normal;"
+								data-dim="w:969px;h:69px;"
+								data-border="bos:solid;boc:#ffaa00;bow:1px,1px,5px,1px;bor:15px,15px,15px,15px;"
+								data-frame_0="y:-50px;o:1;"
+								data-frame_1="st:40010;sp:1000;sR:40010;"
+								data-frame_999="o:0;st:44000;sR:2990;"
+								style="z-index:10;background-color:rgba(0,0,0,0.5);"
+							> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-661-layer-7" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:c;y:369px;"
+								data-text="w:normal;"
+								data-dim="w:888px;h:396px;"
+								data-frame_0="y:top;"
+								data-frame_1="st:4000;sp:1000;sR:4000;"
+								data-frame_999="o:0;st:8010;sR:3010;"
+								data-loop_999="sX:0.9;sY:0.9;sp:10000;e:power2.inOut;yys:t;yyf:t;"
+								style="z-index:29;"
+							><img src="assets/jamon-queso-huevo-aceitunas.png" alt="" class="tp-rs-img" width="862" height="384" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-661-layer-8" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:c;y:348px;"
+								data-text="w:normal;"
+								data-dim="w:888px;h:428px;"
+								data-frame_0="y:top;"
+								data-frame_1="st:8010;sp:1000;sR:8010;"
+								data-frame_999="o:0;st:12010;sR:3000;"
+								data-loop_999="sX:0.9;sY:0.9;sp:10000;e:power2.inOut;yys:t;yyf:t;"
+								style="z-index:27;"
+							><img src="assets/jamon-queso-huevo-y-Morron.png" alt="" class="tp-rs-img" width="908" height="438" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-661-layer-9" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:c;y:170px;"
+								data-text="w:normal;"
+								data-dim="w:888px;h:589px;"
+								data-frame_0="y:top;"
+								data-frame_1="st:12010;sp:1000;sR:12010;"
+								data-frame_999="o:0;st:16010;sR:3000;"
+								data-loop_999="sX:0.9;sY:0.9;sp:10000;e:power2.inOut;yys:t;yyf:t;"
+								style="z-index:25;"
+							><img src="assets/jamon-Anana.png" alt="" class="tp-rs-img" width="943" height="626" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-661-layer-10" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:384px;y:-23px;"
+								data-text="w:normal;"
+								data-dim="w:735px;h:288px;"
+								data-frame_0="x:-50;"
+								data-frame_1="sp:1000;"
+								data-frame_999="o:0;st:w;sR:47000;"
+								style="z-index:35;"
+							><img src="assets/cuadro-nombre.png" alt="" class="tp-rs-img" width="735" height="288" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-661-layer-11" 
+								data-type="text"
+								data-color="#bcbcbc"
+								data-rsp_ch="on"
+								data-xy="x:104px;y:836px;"
+								data-text="w:normal;s:47;l:74;fw:200;"
+								data-frame_999="o:0;st:w;sR:47700;"
+								style="z-index:37;font-family:'Barlow Condensed';"
+							>Jamón y Queso<br />
+Jamón, Queso, Huevo y Aceituna<br />
+Jamón, Queso, Huevo y Morrón<br />
+Jamón y Ananá<br />
+Jamón, Palmito y Salsa Golf<br />
+Jamón, Atún y Morrón<br />
+Jamón y Roquefort<br />
+Jamón, Roquefort y Nuez<br />
+Jamón, Anchoa y Huevo<br />
+Jamón, Lechuga y Morrón<br />
+Jamón, Queso y Cereza<br />
+Jamón, Morrón, Huevo y Aceitunas Negras<br />
+ 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-661-layer-12" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:c;y:348px;"
+								data-text="w:normal;"
+								data-dim="w:888px;h:407px;"
+								data-frame_0="y:top;"
+								data-frame_1="sp:1000;"
+								data-frame_999="o:0;st:4010;sR:3010;"
+								data-loop_999="sX:0.9;sY:0.9;sp:10000;e:power2.inOut;yys:t;yyf:t;"
+								style="z-index:31;"
+							><img src="assets/jamon-y-queso-2.png" alt="" class="tp-rs-img" width="889" height="407" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-661-layer-13" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:c;y:383px;"
+								data-text="w:normal;"
+								data-dim="w:888px;h:363px;"
+								data-frame_0="y:top;"
+								data-frame_1="st:16010;sp:1000;sR:16010;"
+								data-frame_999="o:0;st:20010;sR:3000;"
+								data-loop_999="sX:0.9;sY:0.9;sp:10000;e:power2.inOut;yys:t;yyf:t;"
+								style="z-index:23;"
+							><img src="assets/jamon-y-palmito.png" alt="" class="tp-rs-img" width="887" height="363" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-661-layer-14" 
+								data-type="text"
+								data-color="#ffffff"
+								data-rsp_ch="on"
+								data-xy="x:879px;y:837px;"
+								data-text="w:normal;s:47;l:74;"
+								data-dim="w:772px;"
+								data-frame_999="o:0;st:w;sR:47700;"
+								style="z-index:39;font-family:'Barlow Condensed';"
+							>$3000<br />
+$4000<br />
+$5000<br />
+$6500 <br />
+$6500<br />
+$6500<br />
+$5000<br />
+$5500<br />
+$6000<br />
+$5000<br />
+$6500 <br />
+$5000<br />
+ 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-661-layer-15" 
+								data-type="shape"
+								data-rsp_ch="on"
+								data-xy="x:58px;y:843px;"
+								data-text="w:normal;"
+								data-dim="w:969px;h:69px;"
+								data-border="bos:solid;boc:#ffaa00;bow:1px,1px,5px,1px;bor:15px,15px,15px,15px;"
+								data-frame_999="o:0;st:4010;sR:3710;"
+								style="z-index:30;background-color:rgba(0,0,0,0.5);"
+							> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-661-layer-16" 
+								data-type="shape"
+								data-rsp_ch="on"
+								data-xy="x:58px;y:917px;"
+								data-text="w:normal;"
+								data-dim="w:969px;h:69px;"
+								data-border="bos:solid;boc:#ffaa00;bow:1px,1px,5px,1px;bor:15px,15px,15px,15px;"
+								data-frame_0="y:-50px;o:1;"
+								data-frame_1="st:4010;sp:1000;sR:4010;"
+								data-frame_999="o:0;st:8010;sR:3000;"
+								style="z-index:28;background-color:rgba(0,0,0,0.5);"
+							> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-661-layer-17" 
+								data-type="shape"
+								data-rsp_ch="on"
+								data-xy="x:58px;y:991px;"
+								data-text="w:normal;"
+								data-dim="w:969px;h:69px;"
+								data-border="bos:solid;boc:#ffaa00;bow:1px,1px,5px,1px;bor:15px,15px,15px,15px;"
+								data-frame_0="y:-50px;o:1;"
+								data-frame_1="st:8010;sp:1000;sR:8010;"
+								data-frame_999="o:0;st:12010;sR:3000;"
+								style="z-index:26;background-color:rgba(0,0,0,0.5);"
+							> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-661-layer-18" 
+								data-type="shape"
+								data-rsp_ch="on"
+								data-xy="x:58px;y:1065px;"
+								data-text="w:normal;"
+								data-dim="w:969px;h:69px;"
+								data-border="bos:solid;boc:#ffaa00;bow:1px,1px,5px,1px;bor:15px,15px,15px,15px;"
+								data-frame_0="y:-50px;o:1;"
+								data-frame_1="st:12010;sp:1000;sR:12010;"
+								data-frame_999="o:0;st:16010;sR:3000;"
+								style="z-index:24;background-color:rgba(0,0,0,0.5);"
+							> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-661-layer-19" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:c;y:370px;"
+								data-text="w:normal;"
+								data-dim="w:888px;h:411px;"
+								data-frame_0="y:top;"
+								data-frame_1="st:20010;sp:1000;sR:20010;"
+								data-frame_999="o:0;st:24010;sR:3000;"
+								data-loop_999="sX:0.9;sY:0.9;sp:10000;e:power2.inOut;yys:t;yyf:t;"
+								style="z-index:21;"
+							><img src="assets/jamon-atum-morron.png" alt="" class="tp-rs-img" width="965" height="447" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-661-layer-20" 
+								data-type="shape"
+								data-rsp_ch="on"
+								data-xy="x:58px;y:1139px;"
+								data-text="w:normal;"
+								data-dim="w:969px;h:69px;"
+								data-border="bos:solid;boc:#ffaa00;bow:1px,1px,5px,1px;bor:15px,15px,15px,15px;"
+								data-frame_0="y:-50px;o:1;"
+								data-frame_1="st:16010;sp:1000;sR:16010;"
+								data-frame_999="o:0;st:20010;sR:3000;"
+								style="z-index:22;background-color:rgba(0,0,0,0.5);"
+							> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-661-layer-21" 
+								data-type="shape"
+								data-rsp_ch="on"
+								data-xy="x:58px;y:1213px;"
+								data-text="w:normal;"
+								data-dim="w:969px;h:69px;"
+								data-border="bos:solid;boc:#ffaa00;bow:1px,1px,5px,1px;bor:15px,15px,15px,15px;"
+								data-frame_0="y:-50px;o:1;"
+								data-frame_1="st:20010;sp:1000;sR:20010;"
+								data-frame_999="o:0;st:24010;sR:3000;"
+								style="z-index:20;background-color:rgba(0,0,0,0.5);"
+							> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-661-layer-22" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:c;y:268px;"
+								data-text="w:normal;"
+								data-dim="w:888px;h:512px;"
+								data-frame_0="y:top;"
+								data-frame_1="st:24010;sp:1000;sR:24010;"
+								data-frame_999="o:0;st:28010;sR:3000;"
+								data-loop_999="sX:0.9;sY:0.9;sp:10000;e:power2.inOut;yys:t;yyf:t;"
+								style="z-index:19;"
+							><img src="assets/jamon-y-Roquefort.png" alt="" class="tp-rs-img" width="943" height="544" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-661-layer-23" 
+								data-type="shape"
+								data-rsp_ch="on"
+								data-xy="x:58px;y:1287px;"
+								data-text="w:normal;"
+								data-dim="w:969px;h:69px;"
+								data-border="bos:solid;boc:#ffaa00;bow:1px,1px,5px,1px;bor:15px,15px,15px,15px;"
+								data-frame_0="y:-50px;o:1;"
+								data-frame_1="st:24010;sp:1000;sR:24010;"
+								data-frame_999="o:0;st:28010;sR:3000;"
+								style="z-index:18;background-color:rgba(0,0,0,0.5);"
+							> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-661-layer-24" 
+								data-type="shape"
+								data-rsp_ch="on"
+								data-xy="x:58px;y:1361px;"
+								data-text="w:normal;"
+								data-dim="w:969px;h:69px;"
+								data-border="bos:solid;boc:#ffaa00;bow:1px,1px,5px,1px;bor:15px,15px,15px,15px;"
+								data-frame_0="y:-50px;o:1;"
+								data-frame_1="st:28000;sp:1000;sR:28000;"
+								data-frame_999="o:0;st:32010;sR:3010;"
+								style="z-index:16;background-color:rgba(0,0,0,0.5);"
+							> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-661-layer-25" 
+								data-type="shape"
+								data-rsp_ch="on"
+								data-xy="x:58px;y:1657px;"
+								data-text="w:normal;"
+								data-dim="w:969px;h:69px;"
+								data-border="bos:solid;boc:#ffaa00;bow:1px,1px,5px,1px;bor:15px,15px,15px,15px;"
+								data-frame_0="y:-50px;o:1;"
+								data-frame_1="st:44000;sp:1000;sR:44000;"
+								data-frame_999="o:0;st:w;sR:3000;"
+								style="z-index:8;background-color:rgba(0,0,0,0.5);"
+							> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-661-layer-26" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:c;y:268px;"
+								data-text="w:normal;"
+								data-dim="w:888px;h:512px;"
+								data-frame_0="y:top;"
+								data-frame_1="st:28000;sp:1000;sR:28000;"
+								data-frame_999="o:0;st:32010;sR:3010;"
+								data-loop_999="sX:0.9;sY:0.9;sp:10000;e:power2.inOut;yys:t;yyf:t;"
+								style="z-index:17;"
+							><img src="assets/jamon-y-Roquefort-y-nuez.png" alt="" class="tp-rs-img" width="943" height="544" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-661-layer-27" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:c;y:348px;"
+								data-text="w:normal;"
+								data-dim="w:857px;h:402px;"
+								data-frame_0="y:top;"
+								data-frame_1="st:32000;sp:1000;sR:31960;"
+								data-frame_999="o:0;st:36010;sR:1100;"
+								data-loop_999="sX:0.9;sY:0.9;sp:10000;e:power2.inOut;yys:t;yyf:t;"
+								style="z-index:15;"
+							><img src="assets/Jamon-Anchoa-huevo_-1.png" alt="" class="tp-rs-img" width="854" height="401" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-661-layer-28" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:c;y:328px;"
+								data-text="w:normal;"
+								data-dim="w:888px;h:471px;"
+								data-frame_0="y:top;"
+								data-frame_1="st:36000;sp:1000;sR:31960;"
+								data-frame_999="o:0;st:40010;sR:1100;"
+								data-loop_999="sX:0.9;sY:0.9;sp:10000;e:power2.inOut;yys:t;yyf:t;"
+								style="z-index:13;"
+							><img src="assets/jamon-lechuga-y-Morron.png" alt="" class="tp-rs-img" width="825" height="438" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-661-layer-29" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:c;xo:6px;y:359px;"
+								data-text="w:normal;"
+								data-dim="w:888px;h:436px;"
+								data-frame_0="y:top;"
+								data-frame_1="st:40010;sp:1000;sR:31960;"
+								data-frame_999="o:0;st:44000;sR:1100;"
+								data-loop_999="sX:0.9;sY:0.9;sp:10000;e:power2.inOut;yys:t;yyf:t;"
+								style="z-index:11;"
+							><img src="assets/jamon-y-queso-ceresa.png" alt="" class="tp-rs-img" width="889" height="436" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-661-layer-30" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:c;y:471px;"
+								data-text="w:normal;"
+								data-dim="w:888px;h:270px;"
+								data-frame_0="y:top;"
+								data-frame_1="st:44000;sp:1000;sR:31960;"
+								data-frame_999="o:0;st:w;sR:1100;"
+								data-loop_999="sX:0.9;sY:0.9;sp:10000;e:power2.inOut;yys:t;yyf:t;"
+								style="z-index:9;"
+							><img src="assets/jamon-Morron-huevo-aceitunas-negras.png" alt="" class="tp-rs-img" width="899" height="273" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-661-layer-38" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:r;xo:60px;y:b;yo:60px;"
+								data-text="w:normal;"
+								data-dim="w:130px;h:130px;"
+								data-actions='o:click;a:jumptoslide;slide:rs-651;||o:click;a:playvideo;layer:slider-123-slide-661-layer-55;'
+								data-frame_0="x:right;"
+								data-frame_1="st:440;sp:1000;sR:440;"
+								data-frame_999="x:right;o:0;st:w;sp:1000;"
+								style="z-index:16;"
+							><img src="assets/volver.png" alt="" class="tp-rs-img" width="92" height="92" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-661-layer-55" 
+								class="rs-layer-audio rs-layer-hidden"
+								data-type="audio"
+								data-rsp_ch="on"
+								data-xy="x:50px;y:50px;"
+								data-text="w:normal;"
+								data-dim="w:54;h:54;"
+								data-video="w:54;h:54;p:auto;ap:false;nse:false;l:false;vd:100;ptimer:false;"
+								data-mp4="assets/tukin.mp3"
+								data-frame_999="o:0;st:9000;"
+								style="z-index:18;"
+							> 
+							</rs-layer><!--
+-->						</rs-slide>
+						<rs-slide style="position: absolute;" data-key="rs-656" data-title="Atun" data-duration="16010ms" data-ssop="true" data-in="o:0;" data-out="a:false;">
+							<img src="assets/Fondo.jpg" alt="" title="Fondo" width="1080" height="1920" class="rev-slidebg tp-rs-img" data-bg="f:contain;" data-no-retina>
+<!--
+							--><rs-layer
+								id="slider-123-slide-656-layer-0" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:74px;y:56px;"
+								data-text="w:normal;"
+								data-dim="w:221px;h:230px;"
+								data-frame_0="x:-50;"
+								data-frame_1="sp:1000;"
+								data-frame_999="o:0;st:w;sR:15010;"
+								style="z-index:16;"
+							><img src="assets/logo-club-del-miga.png" alt="" class="tp-rs-img" width="412" height="428" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-656-layer-2" 
+								data-type="text"
+								data-color="#0c0c0c"
+								data-rsp_ch="on"
+								data-xy="x:609px;y:87px;"
+								data-text="w:normal;s:125;fw:700;"
+								data-btrans="rZ:-10;"
+								data-frame_999="o:0;st:w;sR:15710;"
+								style="z-index:20;font-family:'Barlow Condensed';"
+							>Atún 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-656-layer-4" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:-169px;y:1623px;"
+								data-text="w:normal;"
+								data-dim="w:612px;h:408px;"
+								data-frame_0="x:-50;"
+								data-frame_1="sp:1000;"
+								data-frame_999="o:0;st:w;sR:15010;"
+								style="z-index:17;"
+							><img src="assets/atun-2.png" alt="" class="tp-rs-img" width="612" height="408" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-656-layer-5" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:246px;y:1791px;"
+								data-text="w:normal;"
+								data-dim="w:275px;h:226.997px;"
+								data-frame_0="x:-50;"
+								data-frame_1="sp:1000;"
+								data-frame_999="o:0;st:w;sR:15010;"
+								style="z-index:18;"
+							><img src="assets/tomate-cherry.png" alt="" class="tp-rs-img" width="342" height="282" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-656-layer-10" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:384px;y:-23px;"
+								data-text="w:normal;"
+								data-dim="w:735px;h:288px;"
+								data-frame_0="x:-50;"
+								data-frame_1="sp:1000;"
+								data-frame_999="o:0;st:w;sR:15010;"
+								style="z-index:19;"
+							><img src="assets/cuadro-nombre.png" alt="" class="tp-rs-img" width="735" height="288" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-656-layer-11" 
+								data-type="text"
+								data-color="#bcbcbc"
+								data-rsp_ch="on"
+								data-xy="x:104px;y:984px;"
+								data-text="w:normal;s:47;l:74;fw:200;"
+								data-frame_999="o:0;st:w;sR:15710;"
+								style="z-index:21;font-family:'Barlow Condensed';"
+							>Atún, Tomate, Lechuga y Huevo<br />
+Atún, Huevo y Queso<br />
+Atún, Bondiola y Queso<br />
+Atún, Bondiola, Rúcula, Reggianito y Cherry 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-656-layer-12" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:c;y:374px;"
+								data-text="w:normal;"
+								data-dim="w:882px;h:430px;"
+								data-frame_0="y:top;"
+								data-frame_1="sp:1000;"
+								data-frame_999="o:0;st:4010;sR:3010;"
+								data-loop_999="sX:0.9;sY:0.9;sp:10000;e:power2.inOut;yys:t;yyf:t;"
+								style="z-index:15;"
+							><img src="assets/Atun-tomate-lechuga-huevo.png" alt="" class="tp-rs-img" width="896" height="437" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-656-layer-14" 
+								data-type="text"
+								data-color="#ffffff"
+								data-rsp_ch="on"
+								data-xy="x:879px;y:984px;"
+								data-text="w:normal;s:47;l:74;"
+								data-dim="w:671px;"
+								data-frame_999="o:0;st:w;sR:15710;"
+								style="z-index:22;font-family:'Barlow Condensed';"
+							>$5500<br />
+$5500<br />
+$5500<br />
+$5000 <br />
+<br />
+<br />
+ 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-656-layer-15" 
+								data-type="shape"
+								data-rsp_ch="on"
+								data-xy="x:58px;y:990px;"
+								data-text="w:normal;"
+								data-dim="w:969px;h:69px;"
+								data-border="bos:solid;boc:#ffaa00;bow:1px,1px,5px,1px;bor:15px,15px,15px,15px;"
+								data-frame_999="o:0;st:4010;sR:3710;"
+								style="z-index:14;background-color:rgba(0,0,0,0.5);"
+							> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-656-layer-16" 
+								data-type="shape"
+								data-rsp_ch="on"
+								data-xy="x:58px;y:1064px;"
+								data-text="w:normal;"
+								data-dim="w:969px;h:69px;"
+								data-border="bos:solid;boc:#ffaa00;bow:1px,1px,5px,1px;bor:15px,15px,15px,15px;"
+								data-frame_0="y:-50px;o:1;"
+								data-frame_1="st:4010;sp:1000;sR:4010;"
+								data-frame_999="o:0;st:8010;sR:3000;"
+								style="z-index:12;background-color:rgba(0,0,0,0.5);"
+							> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-656-layer-17" 
+								data-type="shape"
+								data-rsp_ch="on"
+								data-xy="x:58px;y:1138px;"
+								data-text="w:normal;"
+								data-dim="w:969px;h:69px;"
+								data-border="bos:solid;boc:#ffaa00;bow:1px,1px,5px,1px;bor:15px,15px,15px,15px;"
+								data-frame_0="y:-50px;o:1;"
+								data-frame_1="st:8010;sp:1000;sR:8010;"
+								data-frame_999="o:0;st:12010;sR:3000;"
+								style="z-index:10;background-color:rgba(0,0,0,0.5);"
+							> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-656-layer-18" 
+								data-type="shape"
+								data-rsp_ch="on"
+								data-xy="x:58px;y:1212px;"
+								data-text="w:normal;"
+								data-dim="w:969px;h:69px;"
+								data-border="bos:solid;boc:#ffaa00;bow:1px,1px,5px,1px;bor:15px,15px,15px,15px;"
+								data-frame_0="y:-50px;o:1;"
+								data-frame_1="st:12010;sp:1000;sR:12010;"
+								data-frame_999="o:0;st:w;sR:3000;"
+								style="z-index:8;background-color:rgba(0,0,0,0.5);"
+							> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-656-layer-31" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:c;y:399px;"
+								data-text="w:normal;"
+								data-dim="w:846px;h:393px;"
+								data-frame_0="y:top;"
+								data-frame_1="st:4010;sp:1000;sR:4010;"
+								data-frame_999="o:0;st:8010;sR:3000;"
+								data-loop_999="sX:0.9;sY:0.9;sp:10000;e:power2.inOut;yys:t;yyf:t;"
+								style="z-index:13;"
+							><img src="assets/Atun-huevo-queso.png" alt="" class="tp-rs-img" width="882" height="410" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-656-layer-32" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:c;y:398px;"
+								data-text="w:normal;"
+								data-dim="w:882px;h:418px;"
+								data-frame_0="y:top;"
+								data-frame_1="st:8010;sp:1000;sR:8010;"
+								data-frame_999="o:0;st:12010;sR:3000;"
+								data-loop_999="sX:0.9;sY:0.9;sp:10000;e:power2.inOut;yys:t;yyf:t;"
+								style="z-index:11;"
+							><img src="assets/Atun-Bondiola-queso.png" alt="" class="tp-rs-img" width="897" height="425" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-656-layer-33" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:c;y:408px;"
+								data-text="w:normal;"
+								data-dim="w:882px;h:441px;"
+								data-frame_0="y:top;"
+								data-frame_1="st:12010;sp:1000;sR:12010;"
+								data-frame_999="o:0;st:w;sR:3000;"
+								data-loop_999="sX:0.9;sY:0.9;sp:10000;e:power2.inOut;yys:t;yyf:t;"
+								style="z-index:9;"
+							><img src="assets/Atun-Bondiola-rucula-reggianito-cherry-1.png" alt="" class="tp-rs-img" width="927" height="463" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-656-layer-39" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:r;xo:60px;y:b;yo:60px;"
+								data-text="w:normal;"
+								data-dim="w:130px;h:130px;"
+								data-actions='o:click;a:playvideo;layer:slider-123-slide-656-layer-56;||o:click;a:jumptoslide;slide:rs-651;'
+								data-frame_0="x:right;"
+								data-frame_1="st:440;sp:1000;sR:440;"
+								data-frame_999="x:right;o:0;st:w;sp:1000;sR:14570;"
+								style="z-index:16;"
+							><img src="assets/volver.png" alt="" class="tp-rs-img" width="92" height="92" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-656-layer-56" 
+								class="rs-layer-audio rs-layer-hidden"
+								data-type="audio"
+								data-rsp_ch="on"
+								data-xy="x:50px;y:50px;"
+								data-text="w:normal;"
+								data-dim="w:54;h:54;"
+								data-video="w:54;h:54;p:auto;ap:false;nse:false;l:false;vd:100;ptimer:false;"
+								data-mp4="assets/tukin.mp3"
+								data-frame_999="o:0;st:9000;sR:8700;"
+								style="z-index:18;"
+							> 
+							</rs-layer><!--
+-->						</rs-slide>
+						<rs-slide style="position: absolute;" data-key="rs-655" data-title="Jamón Crudo" data-duration="20010ms" data-ssop="true" data-in="o:0;" data-out="a:false;">
+							<img src="assets/Fondo.jpg" alt="" title="Fondo" width="1080" height="1920" class="rev-slidebg tp-rs-img" data-bg="f:contain;" data-no-retina>
+<!--
+							--><rs-layer
+								id="slider-123-slide-655-layer-0" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:74px;y:56px;"
+								data-text="w:normal;"
+								data-dim="w:221px;h:230px;"
+								data-frame_0="x:-50;"
+								data-frame_1="sp:1000;"
+								data-frame_999="o:0;st:w;sR:19010;"
+								style="z-index:20;"
+							><img src="assets/logo-club-del-miga.png" alt="" class="tp-rs-img" width="412" height="428" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-655-layer-1" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:c;y:349px;"
+								data-text="w:normal;"
+								data-dim="w:882px;h:566px;"
+								data-frame_0="y:top;"
+								data-frame_1="st:16010;sp:1000;sR:16010;"
+								data-frame_999="o:0;st:w;sR:3000;"
+								data-loop_999="sX:0.9;sY:0.9;sp:10000;e:power2.inOut;yys:t;yyf:t;"
+								style="z-index:11;"
+							><img src="assets/Jamon-Crudo-huevo-morron.png" alt="" class="tp-rs-img" width="764" height="490" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-655-layer-2" 
+								data-type="text"
+								data-color="#0c0c0c"
+								data-rsp_ch="on"
+								data-xy="x:439px;y:71px;"
+								data-text="w:normal;s:125;fw:700;"
+								data-dim="w:679.25px;"
+								data-btrans="rZ:-10;"
+								data-frame_999="o:0;st:w;sR:19710;"
+								style="z-index:25;font-family:'Barlow Condensed';"
+							>Jamón Crudo 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-655-layer-4" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:-101px;y:1753px;"
+								data-text="w:normal;"
+								data-dim="w:472px;h:199px;"
+								data-frame_0="x:-50;"
+								data-frame_1="sp:1000;"
+								data-frame_999="o:0;st:w;sR:19010;"
+								style="z-index:22;"
+							><img src="assets/jamon-crudo1-e11e4560daf2ebc3a216865914563702-640-0.png" alt="" class="tp-rs-img" width="472" height="199" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-655-layer-5" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:-76px;y:1627px;"
+								data-text="w:normal;"
+								data-dim="w:275px;h:226.997px;"
+								data-frame_0="x:-50;"
+								data-frame_1="sp:1000;"
+								data-frame_999="o:0;st:w;sR:19010;"
+								style="z-index:21;"
+							><img src="assets/tomate-cherry.png" alt="" class="tp-rs-img" width="342" height="282" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-655-layer-6" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:232px;y:1775px;"
+								data-text="w:normal;"
+								data-dim="w:275px;h:211px;"
+								data-frame_0="x:-50;"
+								data-frame_1="sp:1000;"
+								data-frame_999="o:0;st:w;sR:19010;"
+								style="z-index:23;"
+							><img src="assets/albaja-corregida.png" alt="" class="tp-rs-img" width="519" height="398" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-655-layer-10" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:384px;y:-23px;"
+								data-text="w:normal;"
+								data-dim="w:735px;h:288px;"
+								data-frame_0="x:-50;"
+								data-frame_1="sp:1000;"
+								data-frame_999="o:0;st:w;sR:19010;"
+								style="z-index:24;"
+							><img src="assets/cuadro-nombre.png" alt="" class="tp-rs-img" width="735" height="288" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-655-layer-11" 
+								data-type="text"
+								data-color="#bcbcbc"
+								data-rsp_ch="on"
+								data-xy="x:105px;y:983px;"
+								data-text="w:normal;s:47;l:74;fw:200;"
+								data-frame_999="o:0;st:w;sR:19710;"
+								style="z-index:26;font-family:'Barlow Condensed';"
+							>Jamón Crudo, Queso y Tomate<br />
+Jamón Crudo, Rúcula y Queso Reggianito<br />
+Jamón Crudo, Roquefort<br />
+Jamón Crudo, Ananá<br />
+Jamón Crudo, Morrón y Huevo<br />
+ 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-655-layer-12" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:c;y:374px;"
+								data-text="w:normal;"
+								data-dim="w:882px;h:425px;"
+								data-frame_0="y:top;"
+								data-frame_1="sp:1000;"
+								data-frame_999="o:0;st:4010;sR:3010;"
+								data-loop_999="sX:0.9;sY:0.9;sp:10000;e:power2.inOut;yys:t;yyf:t;"
+								style="z-index:19;"
+							><img src="assets/Jamon-Crudo-Queso-Tomate.png" alt="" class="tp-rs-img" width="852" height="411" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-655-layer-14" 
+								data-type="text"
+								data-color="#ffffff"
+								data-rsp_ch="on"
+								data-xy="x:879px;y:984px;"
+								data-text="w:normal;s:47;l:74;"
+								data-dim="w:599px;"
+								data-frame_999="o:0;st:w;sR:19710;"
+								style="z-index:27;font-family:'Barlow Condensed';"
+							>$6000<br />
+$5500<br />
+$6500<br />
+$7000<br />
+6500<br />
+<br />
+ 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-655-layer-15" 
+								data-type="shape"
+								data-rsp_ch="on"
+								data-xy="x:58px;y:990px;"
+								data-text="w:normal;"
+								data-dim="w:969px;h:69px;"
+								data-border="bos:solid;boc:#ffaa00;bow:1px,1px,5px,1px;bor:15px,15px,15px,15px;"
+								data-frame_999="o:0;st:4010;sR:3710;"
+								style="z-index:18;background-color:rgba(0,0,0,0.5);"
+							> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-655-layer-16" 
+								data-type="shape"
+								data-rsp_ch="on"
+								data-xy="x:58px;y:1064px;"
+								data-text="w:normal;"
+								data-dim="w:969px;h:69px;"
+								data-border="bos:solid;boc:#ffaa00;bow:1px,1px,5px,1px;bor:15px,15px,15px,15px;"
+								data-frame_0="y:-50px;o:1;"
+								data-frame_1="st:4010;sp:1000;sR:4010;"
+								data-frame_999="o:0;st:8010;sR:3000;"
+								style="z-index:16;background-color:rgba(0,0,0,0.5);"
+							> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-655-layer-17" 
+								data-type="shape"
+								data-rsp_ch="on"
+								data-xy="x:58px;y:1138px;"
+								data-text="w:normal;"
+								data-dim="w:969px;h:69px;"
+								data-border="bos:solid;boc:#ffaa00;bow:1px,1px,5px,1px;bor:15px,15px,15px,15px;"
+								data-frame_0="y:-50px;o:1;"
+								data-frame_1="st:8010;sp:1000;sR:8010;"
+								data-frame_999="o:0;st:12010;sR:3000;"
+								style="z-index:14;background-color:rgba(0,0,0,0.5);"
+							> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-655-layer-18" 
+								data-type="shape"
+								data-rsp_ch="on"
+								data-xy="x:58px;y:1212px;"
+								data-text="w:normal;"
+								data-dim="w:969px;h:69px;"
+								data-border="bos:solid;boc:#ffaa00;bow:1px,1px,5px,1px;bor:15px,15px,15px,15px;"
+								data-frame_0="y:-50px;o:1;"
+								data-frame_1="st:12010;sp:1000;sR:12010;"
+								data-frame_999="o:0;st:16010;sR:3000;"
+								style="z-index:12;background-color:rgba(0,0,0,0.5);"
+							> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-655-layer-20" 
+								data-type="shape"
+								data-rsp_ch="on"
+								data-xy="x:58px;y:1286px;"
+								data-text="w:normal;"
+								data-dim="w:969px;h:69px;"
+								data-border="bos:solid;boc:#ffaa00;bow:1px,1px,5px,1px;bor:15px,15px,15px,15px;"
+								data-frame_0="y:-50px;o:1;"
+								data-frame_1="st:16010;sp:1000;sR:16010;"
+								data-frame_999="o:0;st:w;sR:3000;"
+								style="z-index:10;background-color:rgba(0,0,0,0.5);"
+							> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-655-layer-31" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:c;y:443px;"
+								data-text="w:normal;"
+								data-dim="w:846px;h:389px;"
+								data-frame_0="y:top;"
+								data-frame_1="st:4010;sp:1000;sR:4010;"
+								data-frame_999="o:0;st:8010;sR:3000;"
+								data-loop_999="sX:0.9;sY:0.9;sp:10000;e:power2.inOut;yys:t;yyf:t;"
+								style="z-index:17;"
+							><img src="assets/Jamon-Crudo-Rucula-Que-Reggianito.png" alt="" class="tp-rs-img" width="871" height="400" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-655-layer-32" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:c;y:368px;"
+								data-text="w:normal;"
+								data-dim="w:882px;h:478px;"
+								data-frame_0="y:top;"
+								data-frame_1="st:8010;sp:1000;sR:8010;"
+								data-frame_999="o:0;st:12010;sR:3000;"
+								data-loop_999="sX:0.9;sY:0.9;sp:10000;e:power2.inOut;yys:t;yyf:t;"
+								style="z-index:15;"
+							><img src="assets/Jamon-Crudo-roquefort.png" alt="" class="tp-rs-img" width="838" height="454" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-655-layer-33" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:c;y:168px;"
+								data-text="w:normal;"
+								data-dim="w:818px;h:732px;"
+								data-frame_0="y:top;"
+								data-frame_1="st:12010;sp:1000;sR:12010;"
+								data-frame_999="o:0;st:16010;sR:3000;"
+								data-loop_999="sX:0.9;sY:0.9;sp:10000;e:power2.inOut;yys:t;yyf:t;"
+								style="z-index:13;"
+							><img src="assets/jamon-Anana-copia-e1708977133282.png" alt="" class="tp-rs-img" width="782" height="700" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-655-layer-40" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:r;xo:60px;y:b;yo:60px;"
+								data-text="w:normal;"
+								data-dim="w:130px;h:130px;"
+								data-actions='o:click;a:jumptoslide;slide:rs-651;||o:click;a:playvideo;layer:slider-123-slide-655-layer-57;'
+								data-frame_0="x:right;"
+								data-frame_1="st:440;sp:1000;sR:440;"
+								data-frame_999="x:right;o:0;st:w;sp:1000;sR:18570;"
+								style="z-index:16;"
+							><img src="assets/volver.png" alt="" class="tp-rs-img" width="92" height="92" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-655-layer-57" 
+								class="rs-layer-audio rs-layer-hidden"
+								data-type="audio"
+								data-rsp_ch="on"
+								data-xy="x:50px;y:50px;"
+								data-text="w:normal;"
+								data-dim="w:54;h:54;"
+								data-video="w:54;h:54;p:auto;ap:false;nse:false;l:false;vd:100;ptimer:false;"
+								data-mp4="assets/tukin.mp3"
+								data-frame_999="o:0;st:9000;sR:8700;"
+								style="z-index:18;"
+							> 
+							</rs-layer><!--
+-->						</rs-slide>
+						<rs-slide style="position: absolute;" data-key="rs-657" data-title="Vegetariano" data-duration="20010ms" data-ssop="true" data-in="o:0;" data-out="a:false;">
+							<img src="assets/Fondo.jpg" alt="" title="Fondo" width="1080" height="1920" class="rev-slidebg tp-rs-img" data-bg="f:contain;" data-no-retina>
+<!--
+							--><rs-layer
+								id="slider-123-slide-657-layer-0" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:74px;y:56px;"
+								data-text="w:normal;"
+								data-dim="w:221px;h:230px;"
+								data-frame_0="x:-50;"
+								data-frame_1="sp:1000;"
+								data-frame_999="o:0;st:w;sR:19010;"
+								style="z-index:18;"
+							><img src="assets/logo-club-del-miga.png" alt="" class="tp-rs-img" width="412" height="428" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-657-layer-1" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:c;y:349px;"
+								data-text="w:normal;"
+								data-dim="w:882px;h:534px;"
+								data-frame_0="y:top;"
+								data-frame_1="st:16010;sp:1000;sR:16010;"
+								data-frame_999="o:0;st:w;sR:3000;"
+								data-loop_999="sX:0.9;sY:0.9;sp:10000;e:power2.inOut;yys:t;yyf:t;"
+								style="z-index:9;"
+							><img src="assets/vege-cherry-queso-olivas.png" alt="" class="tp-rs-img" width="848" height="513" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-657-layer-2" 
+								data-type="text"
+								data-color="#0c0c0c"
+								data-rsp_ch="on"
+								data-xy="x:459px;y:67px;"
+								data-text="w:normal;s:125;fw:700;"
+								data-dim="w:679.25px;"
+								data-btrans="rZ:-10;"
+								data-frame_999="o:0;st:w;sR:19710;"
+								style="z-index:23;font-family:'Barlow Condensed';"
+							>Vegetariano 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-657-layer-4" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:-275px;y:1599px;"
+								data-text="w:normal;"
+								data-dim="w:519px;h:398px;"
+								data-frame_0="x:-50;"
+								data-frame_1="sp:1000;"
+								data-frame_999="o:0;st:w;sR:19010;"
+								style="z-index:19;"
+							><img src="assets/Albahaca.png" alt="" class="tp-rs-img" width="519" height="398" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-657-layer-5" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:-68px;y:1737px;"
+								data-text="w:normal;"
+								data-dim="w:347px;h:286px;"
+								data-frame_0="x:-50;"
+								data-frame_1="sp:1000;"
+								data-frame_999="o:0;st:w;sR:19010;"
+								style="z-index:21;"
+							><img src="assets/tomate-cherry.png" alt="" class="tp-rs-img" width="342" height="282" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-657-layer-6" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:36px;y:1747px;"
+								data-text="w:normal;"
+								data-dim="w:451px;h:297px;"
+								data-frame_0="x:-50;"
+								data-frame_1="sp:1000;"
+								data-frame_999="o:0;st:w;sR:19010;"
+								style="z-index:20;"
+							><img src="assets/rucula-3.png" alt="" class="tp-rs-img" width="646" height="425" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-657-layer-10" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:384px;y:-23px;"
+								data-text="w:normal;"
+								data-dim="w:735px;h:288px;"
+								data-frame_0="x:-50;"
+								data-frame_1="sp:1000;"
+								data-frame_999="o:0;st:w;sR:19010;"
+								style="z-index:22;"
+							><img src="assets/cuadro-nombre.png" alt="" class="tp-rs-img" width="735" height="288" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-657-layer-11" 
+								data-type="text"
+								data-color="#bcbcbc"
+								data-rsp_ch="on"
+								data-xy="x:104px;y:984px;"
+								data-text="w:normal;s:47;l:74;fw:200;"
+								data-frame_999="o:0;st:w;sR:19710;"
+								style="z-index:24;font-family:'Barlow Condensed';"
+							>Berenjena, Tomate y Huevo<br />
+Queso, Cherry y Aceitunas Negras<br />
+Zanahoria, Remolacha, Huevo y Queso Crema<br />
+Choclo en Grano y Tomate<br />
+Rúcula, Cherry y Queso Reggianito con Olivas<br />
+ 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-657-layer-12" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:c;y:320px;"
+								data-text="w:normal;"
+								data-dim="w:882px;h:613px;"
+								data-frame_0="y:top;"
+								data-frame_1="sp:1000;"
+								data-frame_999="o:0;st:4010;sR:3010;"
+								data-loop_999="sX:0.9;sY:0.9;sp:10000;e:power2.inOut;yys:t;yyf:t;"
+								style="z-index:17;"
+							><img src="assets/Vege-Berengena-tomate-huevo.png" alt="" class="tp-rs-img" width="776" height="539" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-657-layer-14" 
+								data-type="text"
+								data-color="#ffffff"
+								data-rsp_ch="on"
+								data-xy="x:879px;y:984px;"
+								data-text="w:normal;s:47;l:74;"
+								data-dim="w:632px;"
+								data-frame_999="o:0;st:w;sR:19710;"
+								style="z-index:25;font-family:'Barlow Condensed';"
+							>$4500<br />
+$3500<br />
+$4500 <br />
+$4000<br />
+$4500<br />
+<br />
+<br />
+<br />
+ 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-657-layer-15" 
+								data-type="shape"
+								data-rsp_ch="on"
+								data-xy="x:58px;y:990px;"
+								data-text="w:normal;"
+								data-dim="w:969px;h:69px;"
+								data-border="bos:solid;boc:#ffaa00;bow:1px,1px,5px,1px;bor:15px,15px,15px,15px;"
+								data-frame_999="o:0;st:4010;sR:3710;"
+								style="z-index:16;background-color:rgba(0,0,0,0.5);"
+							> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-657-layer-16" 
+								data-type="shape"
+								data-rsp_ch="on"
+								data-xy="x:58px;y:1064px;"
+								data-text="w:normal;"
+								data-dim="w:969px;h:69px;"
+								data-border="bos:solid;boc:#ffaa00;bow:1px,1px,5px,1px;bor:15px,15px,15px,15px;"
+								data-frame_0="y:-50px;o:1;"
+								data-frame_1="st:4010;sp:1000;sR:4010;"
+								data-frame_999="o:0;st:8010;sR:3000;"
+								style="z-index:14;background-color:rgba(0,0,0,0.5);"
+							> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-657-layer-17" 
+								data-type="shape"
+								data-rsp_ch="on"
+								data-xy="x:58px;y:1138px;"
+								data-text="w:normal;"
+								data-dim="w:969px;h:69px;"
+								data-border="bos:solid;boc:#ffaa00;bow:1px,1px,5px,1px;bor:15px,15px,15px,15px;"
+								data-frame_0="y:-50px;o:1;"
+								data-frame_1="st:8010;sp:1000;sR:8010;"
+								data-frame_999="o:0;st:12010;sR:3000;"
+								style="z-index:12;background-color:rgba(0,0,0,0.5);"
+							> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-657-layer-18" 
+								data-type="shape"
+								data-rsp_ch="on"
+								data-xy="x:58px;y:1212px;"
+								data-text="w:normal;"
+								data-dim="w:969px;h:69px;"
+								data-border="bos:solid;boc:#ffaa00;bow:1px,1px,5px,1px;bor:15px,15px,15px,15px;"
+								data-frame_0="y:-50px;o:1;"
+								data-frame_1="st:12010;sp:1000;sR:12010;"
+								data-frame_999="o:0;st:16010;sR:3000;"
+								style="z-index:10;background-color:rgba(0,0,0,0.5);"
+							> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-657-layer-20" 
+								data-type="shape"
+								data-rsp_ch="on"
+								data-xy="x:58px;y:1286px;"
+								data-text="w:normal;"
+								data-dim="w:969px;h:69px;"
+								data-border="bos:solid;boc:#ffaa00;bow:1px,1px,5px,1px;bor:15px,15px,15px,15px;"
+								data-frame_0="y:-50px;o:1;"
+								data-frame_1="st:16010;sp:1000;sR:16010;"
+								data-frame_999="o:0;st:w;sR:3000;"
+								style="z-index:8;background-color:rgba(0,0,0,0.5);"
+							> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-657-layer-31" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:c;y:443px;"
+								data-text="w:normal;"
+								data-dim="w:846px;h:397px;"
+								data-frame_0="y:top;"
+								data-frame_1="st:4010;sp:1000;sR:4010;"
+								data-frame_999="o:0;st:8010;sR:3000;"
+								data-loop_999="sX:0.9;sY:0.9;sp:10000;e:power2.inOut;yys:t;yyf:t;"
+								style="z-index:15;"
+							><img src="assets/Vege-Queso-tomate-aceituna-negras.png" alt="" class="tp-rs-img" width="894" height="420" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-657-layer-32" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:c;y:444px;"
+								data-text="w:normal;"
+								data-dim="w:882px;h:392px;"
+								data-frame_0="y:top;"
+								data-frame_1="st:8010;sp:1000;sR:8010;"
+								data-frame_999="o:0;st:12010;sR:3000;"
+								data-loop_999="sX:0.9;sY:0.9;sp:10000;e:power2.inOut;yys:t;yyf:t;"
+								style="z-index:13;"
+							><img src="assets/vege-Zanahoria-Remolacha-Huevo-Queso-crema.png" alt="" class="tp-rs-img" width="881" height="392" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-657-layer-33" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:c;y:532px;"
+								data-text="w:normal;"
+								data-dim="w:818px;h:312px;"
+								data-frame_0="y:top;"
+								data-frame_1="st:12010;sp:1000;sR:12010;"
+								data-frame_999="o:0;st:16010;sR:3000;"
+								data-loop_999="sX:0.9;sY:0.9;sp:10000;e:power2.inOut;yys:t;yyf:t;"
+								style="z-index:11;"
+							><img src="assets/vege-choclo-en-grano-y-tomate.png" alt="" class="tp-rs-img" width="941" height="359" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-657-layer-41" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:r;xo:60px;y:b;yo:60px;"
+								data-text="w:normal;"
+								data-dim="w:130px;h:130px;"
+								data-actions='o:click;a:jumptoslide;slide:rs-651;||o:click;a:playvideo;layer:slider-123-slide-657-layer-58;'
+								data-frame_0="x:right;"
+								data-frame_1="st:440;sp:1000;sR:440;"
+								data-frame_999="x:right;o:0;st:w;sp:1000;sR:18570;"
+								style="z-index:16;"
+							><img src="assets/volver.png" alt="" class="tp-rs-img" width="92" height="92" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-657-layer-58" 
+								class="rs-layer-audio rs-layer-hidden"
+								data-type="audio"
+								data-rsp_ch="on"
+								data-xy="x:50px;y:50px;"
+								data-text="w:normal;"
+								data-dim="w:54;h:54;"
+								data-video="w:54;h:54;p:auto;ap:false;nse:false;l:false;vd:100;ptimer:false;"
+								data-mp4="assets/tukin.mp3"
+								data-frame_999="o:0;st:9000;sR:8700;"
+								style="z-index:18;"
+							> 
+							</rs-layer><!--
+-->						</rs-slide>
+						<rs-slide style="position: absolute;" data-key="rs-662" data-title="Platos tapa" data-ssop="true" data-in="o:0;" data-out="a:false;">
+							<img src="assets/Fondo.jpg" alt="" title="Fondo" width="1080" height="1920" class="rev-slidebg tp-rs-img" data-no-retina>
+<!--
+							--><rs-layer
+								id="slider-123-slide-662-layer-2" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:c;xo:-318px;y:c;yo:-737px;"
+								data-text="w:normal;"
+								data-dim="w:252px;h:262px;"
+								data-frame_0="sX:0.9;sY:0.9;"
+								data-frame_1="e:power2.inOut;st:440;sp:1000;sR:440;"
+								data-frame_999="o:0;st:w;sR:7560;"
+								data-loop_0="y:-10;"
+								data-loop_999="y:10;sp:6000;e:sine.inOut;yym:t;"
+								style="z-index:8;"
+							><img src="assets/logo-club-del-miga.png" alt="" class="tp-rs-img" width="412" height="428" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-662-layer-3" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:c;xo:6px;y:449px;"
+								data-text="w:normal;"
+								data-dim="w:537px;h:210px;"
+								data-actions='o:click;a:jumptoslide;slide:rs-663;||o:click;a:playvideo;layer:slider-123-slide-662-layer-62;'
+								data-frame_0="x:right;"
+								data-frame_1="st:1200;sp:1000;sR:1200;"
+								data-frame_999="x:right;o:0;st:w;sp:1000;sR:6800;"
+								style="z-index:11;"
+							><img src="assets/empanadas-boton.png" alt="" class="tp-rs-img" width="419" height="164" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-662-layer-4" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:c;xo:19px;y:618px;"
+								data-text="w:normal;"
+								data-dim="w:560px;h:210px;"
+								data-actions='o:click;a:jumptoslide;slide:rs-664;||o:click;a:playvideo;layer:slider-123-slide-662-layer-62;'
+								data-frame_0="x:left;"
+								data-frame_1="st:800;sp:1000;sR:800;"
+								data-frame_999="x:left;o:0;st:w;sp:1000;sR:7200;"
+								style="z-index:10;"
+							><img src="assets/tartas-boton.png" alt="" class="tp-rs-img" width="419" height="157" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-662-layer-42" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:r;xo:60px;y:b;yo:60px;"
+								data-text="w:normal;"
+								data-dim="w:130px;h:130px;"
+								data-actions='o:click;a:jumptoslide;slide:rs-650;||o:click;a:playvideo;layer:slider-123-slide-662-layer-62;'
+								data-frame_0="x:right;"
+								data-frame_1="st:440;sp:1000;sR:440;"
+								data-frame_999="x:right;o:0;st:w;sp:1000;"
+								style="z-index:16;"
+							><img src="assets/volver.png" alt="" class="tp-rs-img" width="92" height="92" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-662-layer-44" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:441px;y:-10px;"
+								data-text="w:normal;"
+								data-dim="w:658px;h:258px;"
+								data-frame_0="y:top;"
+								data-frame_1="st:450;sp:1000;sR:450;"
+								data-frame_999="o:0;st:w;sR:7550;"
+								style="z-index:9;"
+							><img src="assets/al-plato-boton.png" alt="" class="tp-rs-img" width="419" height="164" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-662-layer-62" 
+								class="rs-layer-audio rs-layer-hidden"
+								data-type="audio"
+								data-rsp_ch="on"
+								data-xy="x:50px;y:50px;"
+								data-text="w:normal;"
+								data-dim="w:54;h:54;"
+								data-video="w:54;h:54;p:auto;ap:false;nse:false;l:false;vd:100;ptimer:false;"
+								data-mp4="assets/tukin.mp3"
+								data-frame_999="o:0;st:w;"
+								style="z-index:18;"
+							> 
+							</rs-layer><!--
+-->						</rs-slide>
+						<rs-slide style="position: absolute;" data-key="rs-663" data-title="Empanadas" data-duration="19000ms" data-ssop="true" data-in="o:0;" data-out="a:false;">
+							<img src="assets/Fondo.jpg" alt="" title="Fondo" width="1080" height="1920" class="rev-slidebg tp-rs-img" data-bg="f:contain;" data-no-retina>
+<!--
+							--><rs-layer
+								id="slider-123-slide-663-layer-0" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:74px;y:56px;"
+								data-text="w:normal;"
+								data-dim="w:221px;h:230px;"
+								data-frame_0="x:-50;"
+								data-frame_1="sp:1000;"
+								data-frame_999="o:0;st:w;sR:18000;"
+								style="z-index:19;"
+							><img src="assets/logo-club-del-miga.png" alt="" class="tp-rs-img" width="412" height="428" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-663-layer-1" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:c;xo:-3px;y:460px;"
+								data-text="w:normal;"
+								data-dim="w:647px;h:475px;"
+								data-btrans="rZ:-7;"
+								data-frame_0="y:top;"
+								data-frame_1="st:16010;sp:1000;sR:16010;"
+								data-frame_999="o:0;st:w;sR:1990;"
+								data-loop_999="sX:0.9;sY:0.9;sp:10000;e:power2.inOut;yys:t;yyf:t;"
+								style="z-index:9;"
+							><img src="assets/osobuco-1.png" alt="" class="tp-rs-img" width="456" height="335" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-663-layer-2" 
+								data-type="text"
+								data-color="#0c0c0c"
+								data-rsp_ch="on"
+								data-xy="x:477px;y:81px;"
+								data-text="w:normal;s:125;fw:700;"
+								data-btrans="rZ:-10;"
+								data-frame_999="o:0;st:w;sR:18700;"
+								style="z-index:26;font-family:'Barlow Condensed';"
+							>Empanadas 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-663-layer-4" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:-316px;y:1544px;"
+								data-text="w:normal;"
+								data-dim="w:664px;h:664px;"
+								data-frame_0="x:-50;"
+								data-frame_1="sp:1000;"
+								data-frame_999="o:0;st:w;sR:18000;"
+								style="z-index:20;"
+							><img src="assets/acelga-1-1.png" alt="" class="tp-rs-img" width="1000" height="1000" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-663-layer-6" 
+								data-type="text"
+								data-color="#ffffff"
+								data-rsp_ch="on"
+								data-xy="x:809px;y:1000px;"
+								data-text="w:normal;"
+								data-frame_999="o:0;st:w;sR:18700;"
+								style="z-index:29;font-family:'Roboto';"
+							> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-663-layer-8" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:446px;y:1734px;"
+								data-text="w:normal;"
+								data-dim="w:421px;h:421px;"
+								data-frame_0="x:-50;"
+								data-frame_1="sp:1000;"
+								data-frame_999="o:0;st:w;sR:18000;"
+								style="z-index:21;"
+							><img src="assets/queso-barra-tibo-1.png" alt="" class="tp-rs-img" width="500" height="500" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-663-layer-9" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:-119px;y:1727px;"
+								data-text="w:normal;"
+								data-dim="w:507px;h:312px;"
+								data-frame_0="x:-50;"
+								data-frame_1="sp:1000;"
+								data-frame_999="o:0;st:w;sR:18000;"
+								style="z-index:23;"
+							><img src="assets/pollo-desmenuzado.png" alt="" class="tp-rs-img" width="458" height="282" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-663-layer-10" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:384px;y:-23px;"
+								data-text="w:normal;"
+								data-dim="w:735px;h:288px;"
+								data-frame_0="x:-50;"
+								data-frame_1="sp:1000;"
+								data-frame_999="o:0;st:w;sR:18000;"
+								style="z-index:25;"
+							><img src="assets/cuadro-nombre.png" alt="" class="tp-rs-img" width="735" height="288" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-663-layer-11" 
+								data-type="text"
+								data-color="#bcbcbc"
+								data-rsp_ch="on"
+								data-xy="x:104px;y:984px;"
+								data-text="w:normal;s:47;l:74;fw:200;"
+								data-frame_999="o:0;st:w;sR:18700;"
+								style="z-index:27;font-family:'Barlow Condensed';"
+							>Pollo<br />
+Carne<br />
+Árabes<br />
+Jamón y Queso<br />
+Osobuco 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-663-layer-12" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:c;y:416px;"
+								data-text="w:normal;"
+								data-dim="w:799px;h:428px;"
+								data-frame_0="y:top;"
+								data-frame_1="sp:1000;"
+								data-frame_999="o:0;st:4010;sR:3010;"
+								data-loop_999="sX:0.9;sY:0.9;sp:10000;e:power2.inOut;yys:t;yyf:t;"
+								style="z-index:18;"
+							><img src="assets/empanadas-de-pollo-al-horno.png" alt="" class="tp-rs-img" width="696" height="373" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-663-layer-13" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:-144px;y:1771px;"
+								data-text="w:normal;"
+								data-dim="w:873px;h:582px;"
+								data-frame_0="x:-50;"
+								data-frame_1="sp:1000;"
+								data-frame_999="o:0;st:w;sR:18000;"
+								style="z-index:22;"
+							><img src="assets/carne-ahumada-ternera.png" alt="" class="tp-rs-img" width="612" height="408" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-663-layer-14" 
+								data-type="text"
+								data-color="#ffffff"
+								data-rsp_ch="on"
+								data-xy="x:879px;y:984px;"
+								data-text="w:normal;s:47;l:74;"
+								data-dim="w:200px;"
+								data-frame_999="o:0;st:w;sR:18700;"
+								style="z-index:28;font-family:'Barlow Condensed';"
+							>$8000<br />
+$8000<br />
+$8000<br />
+$8000<br />
+$8000 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-663-layer-15" 
+								data-type="shape"
+								data-rsp_ch="on"
+								data-xy="x:58px;y:990px;"
+								data-text="w:normal;"
+								data-dim="w:969px;h:69px;"
+								data-border="bos:solid;boc:#ffaa00;bow:1px,1px,5px,1px;bor:15px,15px,15px,15px;"
+								data-frame_999="o:0;st:4010;sR:3710;"
+								style="z-index:17;background-color:rgba(0,0,0,0.5);"
+							> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-663-layer-16" 
+								data-type="shape"
+								data-rsp_ch="on"
+								data-xy="x:58px;y:1064px;"
+								data-text="w:normal;"
+								data-dim="w:969px;h:69px;"
+								data-border="bos:solid;boc:#ffaa00;bow:1px,1px,5px,1px;bor:15px,15px,15px,15px;"
+								data-frame_0="y:-50px;o:1;"
+								data-frame_1="st:4010;sp:1000;sR:4010;"
+								data-frame_999="o:0;st:8010;sR:3000;"
+								style="z-index:14;background-color:rgba(0,0,0,0.5);"
+							> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-663-layer-17" 
+								data-type="shape"
+								data-rsp_ch="on"
+								data-xy="x:58px;y:1138px;"
+								data-text="w:normal;"
+								data-dim="w:969px;h:69px;"
+								data-border="bos:solid;boc:#ffaa00;bow:1px,1px,5px,1px;bor:15px,15px,15px,15px;"
+								data-frame_0="y:-50px;o:1;"
+								data-frame_1="st:8010;sp:1000;sR:8010;"
+								data-frame_999="o:0;st:12010;sR:3000;"
+								style="z-index:12;background-color:rgba(0,0,0,0.5);"
+							> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-663-layer-18" 
+								data-type="shape"
+								data-rsp_ch="on"
+								data-xy="x:58px;y:1212px;"
+								data-text="w:normal;"
+								data-dim="w:969px;h:69px;"
+								data-border="bos:solid;boc:#ffaa00;bow:1px,1px,5px,1px;bor:15px,15px,15px,15px;"
+								data-frame_0="y:-50px;o:1;"
+								data-frame_1="st:12010;sp:1000;sR:12010;"
+								data-frame_999="o:0;st:16010;sR:3000;"
+								style="z-index:10;background-color:rgba(0,0,0,0.5);"
+							> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-663-layer-20" 
+								data-type="shape"
+								data-rsp_ch="on"
+								data-xy="x:58px;y:1286px;"
+								data-text="w:normal;"
+								data-dim="w:969px;h:69px;"
+								data-border="bos:solid;boc:#ffaa00;bow:1px,1px,5px,1px;bor:15px,15px,15px,15px;"
+								data-frame_0="y:-50px;o:1;"
+								data-frame_1="st:16010;sp:1000;sR:16010;"
+								data-frame_999="o:0;st:w;sR:1990;"
+								style="z-index:8;background-color:rgba(0,0,0,0.5);"
+							> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-663-layer-31" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:c;xo:-13px;y:354px;"
+								data-text="w:normal;"
+								data-dim="w:709px;h:566.988px;"
+								data-frame_0="y:top;"
+								data-frame_1="st:4010;sp:1000;sR:4010;"
+								data-frame_999="o:0;st:8010;sR:3000;"
+								data-loop_999="sX:0.9;sY:0.9;sp:10000;e:power2.inOut;yys:t;yyf:t;"
+								style="z-index:15;"
+							><img src="assets/empanadas-de-carne-1.png" alt="" class="tp-rs-img" width="470" height="376" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-663-layer-32" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:c;y:367px;"
+								data-text="w:normal;"
+								data-dim="w:793px;h:597px;"
+								data-frame_0="y:top;"
+								data-frame_1="st:8010;sp:1000;sR:8010;"
+								data-frame_999="o:0;st:12010;sR:3000;"
+								data-loop_999="sX:0.9;sY:0.9;sp:10000;e:power2.inOut;yys:t;yyf:t;"
+								style="z-index:13;"
+							><img src="assets/empanada-arabe-2.png" alt="" class="tp-rs-img" width="1024" height="771" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-663-layer-33" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:c;y:442px;"
+								data-text="w:normal;"
+								data-dim="w:716px;h:457px;"
+								data-frame_0="y:top;"
+								data-frame_1="st:12010;sp:1000;sR:12010;"
+								data-frame_999="o:0;st:16010;sR:3000;"
+								data-loop_999="sX:0.9;sY:0.9;sp:10000;e:power2.inOut;yys:t;yyf:t;"
+								style="z-index:11;"
+							><img src="assets/empanadas-de-jamon-y-queso.png" alt="" class="tp-rs-img" width="642" height="410" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-663-layer-43" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:r;xo:60px;y:b;yo:60px;"
+								data-text="w:normal;"
+								data-dim="w:130px;h:130px;"
+								data-actions='o:click;a:jumptoslide;slide:rs-662;||o:click;a:playvideo;layer:slider-123-slide-663-layer-60;'
+								data-frame_0="x:right;"
+								data-frame_1="st:440;sp:1000;sR:440;"
+								data-frame_999="x:right;o:0;st:w;sp:1000;sR:17560;"
+								style="z-index:30;"
+							><img src="assets/volver.png" alt="" class="tp-rs-img" width="92" height="92" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-663-layer-60" 
+								class="rs-layer-audio rs-layer-hidden"
+								data-type="audio"
+								data-rsp_ch="on"
+								data-xy="x:50px;y:50px;"
+								data-text="w:normal;"
+								data-dim="w:54;h:54;"
+								data-video="w:54;h:54;p:auto;ap:false;nse:false;l:false;vd:100;ptimer:false;"
+								data-mp4="assets/tukin.mp3"
+								data-frame_999="o:0;st:9000;sR:8700;"
+								style="z-index:16;"
+							> 
+							</rs-layer><!--
+-->						</rs-slide>
+						<rs-slide style="position: absolute;" data-key="rs-664" data-title="Tartas" data-duration="8010ms" data-ssop="true" data-in="o:0;" data-out="a:false;">
+							<img src="assets/Fondo.jpg" alt="" title="Fondo" width="1080" height="1920" class="rev-slidebg tp-rs-img" data-bg="f:contain;" data-no-retina>
+<!--
+							--><rs-layer
+								id="slider-123-slide-664-layer-0" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:74px;y:56px;"
+								data-text="w:normal;"
+								data-dim="w:221px;h:230px;"
+								data-frame_0="x:-50;"
+								data-frame_1="sp:1000;"
+								data-frame_999="o:0;st:w;sR:35000;"
+								style="z-index:12;"
+							><img src="assets/logo-club-del-miga.png" alt="" class="tp-rs-img" width="412" height="428" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-664-layer-2" 
+								data-type="text"
+								data-color="#0c0c0c"
+								data-rsp_ch="on"
+								data-xy="x:518px;y:92px;"
+								data-text="w:normal;s:125;fw:700;"
+								data-btrans="rZ:-10;"
+								data-frame_999="o:0;st:w;sR:35700;"
+								style="z-index:18;font-family:'Barlow Condensed';"
+							>Tartas 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-664-layer-3" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:-271px;y:1674px;"
+								data-text="w:normal;"
+								data-dim="w:594px;h:306px;"
+								data-frame_0="x:-50;"
+								data-frame_1="sp:1000;"
+								data-frame_999="o:0;st:w;sR:35000;"
+								style="z-index:15;"
+							><img src="assets/JAMON-COCIDO-PALADINI-removebg-preview.png" alt="" class="tp-rs-img" width="464" height="239" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-664-layer-4" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:39px;y:1747px;"
+								data-text="w:normal;"
+								data-dim="w:594px;h:594px;"
+								data-frame_0="x:-50;"
+								data-frame_1="sp:1000;"
+								data-frame_999="o:0;st:w;sR:35000;"
+								style="z-index:14;"
+							><img src="assets/acelga-1-1.png" alt="" class="tp-rs-img" width="1000" height="1000" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-664-layer-5" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:315px;y:1782px;"
+								data-text="w:normal;"
+								data-dim="w:407px;h:282px;"
+								data-frame_0="x:-50;"
+								data-frame_1="sp:1000;"
+								data-frame_999="o:0;st:w;sR:35000;"
+								style="z-index:13;"
+							><img src="assets/queso-tibo.png" alt="" class="tp-rs-img" width="429" height="297" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-664-layer-6" 
+								data-type="text"
+								data-color="#ffffff"
+								data-rsp_ch="on"
+								data-xy="x:809px;y:1000px;"
+								data-text="w:normal;"
+								data-frame_999="o:0;st:w;"
+								style="z-index:22;font-family:'Roboto';"
+							> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-664-layer-10" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:384px;y:-23px;"
+								data-text="w:normal;"
+								data-dim="w:735px;h:288px;"
+								data-frame_0="x:-50;"
+								data-frame_1="sp:1000;"
+								data-frame_999="o:0;st:w;sR:35000;"
+								style="z-index:17;"
+							><img src="assets/cuadro-nombre.png" alt="" class="tp-rs-img" width="735" height="288" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-664-layer-11" 
+								data-type="text"
+								data-color="#bcbcbc"
+								data-rsp_ch="on"
+								data-xy="x:104px;y:984px;"
+								data-text="w:normal;s:47;l:74;fw:200;"
+								data-frame_999="o:0;st:w;sR:35700;"
+								style="z-index:20;font-family:'Barlow Condensed';"
+							>Jamón, Queso y Huevo<br />
+Verduras 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-664-layer-12" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:c;y:477px;"
+								data-text="w:normal;"
+								data-dim="w:799px;h:361px;"
+								data-frame_0="y:top;"
+								data-frame_1="sp:1000;"
+								data-frame_999="o:0;st:4010;sR:35000;"
+								data-loop_999="sX:0.9;sY:0.9;sp:10000;e:power2.inOut;yys:t;yyf:t;"
+								style="z-index:11;"
+							><img src="assets/Tarta-Jamon-y-Queso.png" alt="" class="tp-rs-img" width="706" height="319" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-664-layer-14" 
+								data-type="text"
+								data-color="#ffffff"
+								data-rsp_ch="on"
+								data-xy="x:879px;y:984px;"
+								data-text="w:normal;s:47;l:74;"
+								data-dim="w:200px;"
+								data-frame_999="o:0;st:w;sR:35700;"
+								style="z-index:21;font-family:'Barlow Condensed';"
+							>$9000<br />
+$9000 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-664-layer-15" 
+								data-type="shape"
+								data-rsp_ch="on"
+								data-xy="x:58px;y:990px;"
+								data-text="w:normal;"
+								data-dim="w:969px;h:69px;"
+								data-border="bos:solid;boc:#ffaa00;bow:1px,1px,5px,1px;bor:15px,15px,15px,15px;"
+								data-frame_999="o:0;st:4010;sR:3710;"
+								style="z-index:10;background-color:rgba(0,0,0,0.5);"
+							> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-664-layer-16" 
+								data-type="shape"
+								data-rsp_ch="on"
+								data-xy="x:58px;y:1064px;"
+								data-text="w:normal;"
+								data-dim="w:969px;h:69px;"
+								data-border="bos:solid;boc:#ffaa00;bow:1px,1px,5px,1px;bor:15px,15px,15px,15px;"
+								data-frame_0="y:-50px;o:1;"
+								data-frame_1="st:4010;sp:1000;sR:4010;"
+								data-frame_999="o:0;st:w;sR:3000;"
+								style="z-index:8;background-color:rgba(0,0,0,0.5);"
+							> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-664-layer-31" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:c;xo:-1px;y:391px;"
+								data-text="w:normal;"
+								data-dim="w:686px;h:488px;"
+								data-frame_0="y:top;"
+								data-frame_1="st:4010;sp:1000;"
+								data-frame_999="o:0;st:w;sR:35000;"
+								data-loop_999="sX:0.9;sY:0.9;sp:10000;e:power2.inOut;yys:t;yyf:t;"
+								style="z-index:9;"
+							><img src="assets/tarta-de-verdura.png" alt="" class="tp-rs-img" width="633" height="450" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-664-layer-45" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:r;xo:60px;y:b;yo:60px;"
+								data-text="w:normal;"
+								data-dim="w:130px;h:130px;"
+								data-actions='o:click;a:jumptoslide;slide:rs-662;||o:click;a:playvideo;layer:slider-123-slide-664-layer-63;'
+								data-frame_0="x:right;"
+								data-frame_1="st:440;sp:1000;sR:440;"
+								data-frame_999="x:right;o:0;st:w;sp:1000;"
+								style="z-index:16;"
+							><img src="assets/volver.png" alt="" class="tp-rs-img" width="92" height="92" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-664-layer-63" 
+								class="rs-layer-audio rs-layer-hidden"
+								data-type="audio"
+								data-rsp_ch="on"
+								data-xy="x:50px;y:50px;"
+								data-text="w:normal;"
+								data-dim="w:54;h:54;"
+								data-video="w:54;h:54;p:auto;ap:false;nse:false;l:false;vd:100;ptimer:false;"
+								data-mp4="assets/tukin.mp3"
+								data-frame_999="o:0;st:w;"
+								style="z-index:19;"
+							> 
+							</rs-layer><!--
+-->						</rs-slide>
+						<rs-slide style="position: absolute;" data-key="rs-665" data-title="Paquetes" data-duration="11900ms" data-ssop="true" data-in="o:0;" data-out="a:false;">
+							<img src="assets/Fondo.jpg" alt="" title="Fondo" width="1080" height="1920" class="rev-slidebg tp-rs-img" data-bg="f:contain;" data-no-retina>
+<!--
+							--><rs-layer
+								id="slider-123-slide-665-layer-0" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:74px;y:56px;"
+								data-text="w:normal;"
+								data-dim="w:221px;h:230px;"
+								data-frame_0="x:-50;"
+								data-frame_1="sp:1000;"
+								data-frame_999="o:0;st:w;sR:10900;"
+								style="z-index:8;"
+							><img src="assets/logo-club-del-miga.png" alt="" class="tp-rs-img" width="412" height="428" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-665-layer-6" 
+								data-type="text"
+								data-color="#ffffff"
+								data-rsp_ch="on"
+								data-xy="x:809px;y:1000px;"
+								data-text="w:normal;"
+								data-frame_999="o:0;st:w;sR:11600;"
+								style="z-index:9;font-family:'Roboto';"
+							> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-665-layer-7" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:552px;y:990px;"
+								data-text="w:normal;"
+								data-dim="w:364px;h:377px;"
+								data-frame_0="x:ran(-250|250);y:ran(-150|150);sX:ran(0|1.5);sY:ran(0|1.5);rX:ran(-90|90);rY:ran(-90|90);rZ:ran(-90|90);"
+								data-frame_1="e:power4.inOut;st:1920;sp:1500;sR:1920;"
+								data-frame_999="o:0;st:w;sR:8480;"
+								style="z-index:10;"
+							><img src="assets/paquete-4B.png" alt="" class="tp-rs-img" width="364" height="377" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-665-layer-8" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:124px;y:1066px;"
+								data-text="w:normal;"
+								data-dim="w:375px;h:361px;"
+								data-frame_0="x:ran(-250|250);y:ran(-150|150);sX:ran(0|1.5);sY:ran(0|1.5);rX:ran(-90|90);rY:ran(-90|90);rZ:ran(-90|90);"
+								data-frame_1="e:power4.inOut;st:1240;sp:1500;sR:1240;"
+								data-frame_999="o:0;st:w;sR:9160;"
+								style="z-index:12;"
+							><img src="assets/paquete-3B.png" alt="" class="tp-rs-img" width="375" height="361" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-665-layer-9" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:551px;y:364px;"
+								data-text="w:normal;"
+								data-dim="w:343px;h:370px;"
+								data-frame_0="x:ran(-250|250);y:ran(-150|150);sX:ran(0|1.5);sY:ran(0|1.5);rX:ran(-90|90);rY:ran(-90|90);rZ:ran(-90|90);"
+								data-frame_1="e:power4.inOut;st:580;sp:1500;sR:580;"
+								data-frame_999="o:0;st:w;sR:9820;"
+								style="z-index:13;"
+							><img src="assets/paquete-2B.png" alt="" class="tp-rs-img" width="343" height="370" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-665-layer-11" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:123px;y:440px;"
+								data-text="w:normal;"
+								data-dim="w:375px;h:359px;"
+								data-frame_0="x:ran(-250|250);y:ran(-150|150);sX:ran(0|1.5);sY:ran(0|1.5);rX:ran(-90|90);rY:ran(-90|90);rZ:ran(-90|90);"
+								data-frame_1="e:power4.inOut;sp:1500;"
+								data-frame_999="o:0;st:w;sR:10400;"
+								style="z-index:14;"
+							><img src="assets/paquete-1B.png" alt="" class="tp-rs-img" width="375" height="359" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-665-layer-12" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:-138px;y:1702px;"
+								data-text="w:normal;"
+								data-dim="w:646px;h:283px;"
+								data-frame_0="y:50;"
+								data-frame_1="sp:1000;"
+								data-frame_999="o:0;st:w;sR:10900;"
+								style="z-index:15;"
+							><img src="assets/ternera-mostaza-tomate-huevo-ciboulette-1.png" alt="" class="tp-rs-img" width="946" height="415" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-665-layer-13" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:318px;y:1646px;"
+								data-text="w:normal;"
+								data-dim="w:900px;h:408px;"
+								data-frame_0="y:50;"
+								data-frame_1="sp:1000;"
+								data-frame_999="o:0;st:w;sR:10900;"
+								style="z-index:16;"
+							><img src="assets/ternera-queso-huevo.png" alt="" class="tp-rs-img" width="938" height="425" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-665-layer-15" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:739px;y:-184px;"
+								data-text="w:normal;"
+								data-dim="w:519px;h:398px;"
+								data-frame_0="x:50;"
+								data-frame_1="sp:1000;"
+								data-frame_999="o:0;st:w;sR:10900;"
+								style="z-index:17;"
+							><img src="assets/Albahaca.png" alt="" class="tp-rs-img" width="519" height="398" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-665-layer-49" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:r;xo:60px;y:b;yo:60px;"
+								data-text="w:normal;"
+								data-dim="w:130px;h:130px;"
+								data-actions='o:click;a:jumptoslide;slide:rs-650;||o:click;a:playvideo;layer:slider-123-slide-665-layer-64;'
+								data-frame_0="x:right;"
+								data-frame_1="st:440;sp:1000;sR:440;"
+								data-frame_999="x:right;o:0;st:w;sp:1000;sR:10460;"
+								style="z-index:18;"
+							><img src="assets/volver.png" alt="" class="tp-rs-img" width="92" height="92" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-665-layer-64" 
+								class="rs-layer-audio rs-layer-hidden"
+								data-type="audio"
+								data-rsp_ch="on"
+								data-xy="x:50px;y:50px;"
+								data-text="w:normal;"
+								data-dim="w:54;h:54;"
+								data-video="w:54;h:54;p:auto;ap:false;nse:false;l:false;vd:100;ptimer:false;"
+								data-mp4="assets/tukin.mp3"
+								data-frame_999="o:0;st:9000;sR:8700;"
+								style="z-index:11;"
+							> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-665-layer-65" 
+								data-type="text"
+								data-color="#f99500"
+								data-rsp_ch="on"
+								data-xy="x:219px;y:851px;"
+								data-text="w:normal;s:60;l:70;ls:1;fw:500;"
+								data-dim="minh:0px;"
+								data-btrans="rZ:-10;"
+								data-frame_999="o:0;st:w;"
+								style="z-index:20;font-family:'Impact', 'Charcoal', 'sans-serif';"
+							>$28000 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-665-layer-66" 
+								data-type="text"
+								data-color="#f99500"
+								data-rsp_ch="on"
+								data-xy="x:626px;y:778px;"
+								data-text="w:normal;s:60;l:70;ls:1;fw:500;"
+								data-dim="minh:0px;"
+								data-btrans="rZ:-10;"
+								data-frame_999="o:0;st:w;"
+								style="z-index:19;font-family:'Impact', 'Charcoal', 'sans-serif';"
+							>$30000 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-665-layer-67" 
+								data-type="text"
+								data-color="#f99500"
+								data-rsp_ch="on"
+								data-xy="x:244px;y:1466px;"
+								data-text="w:normal;s:60;l:70;ls:1;fw:500;"
+								data-dim="minh:0px;"
+								data-btrans="rZ:-10;"
+								data-frame_999="o:0;st:w;"
+								style="z-index:19;font-family:'Impact', 'Charcoal', 'sans-serif';"
+							>$34000 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-123-slide-665-layer-68" 
+								data-type="text"
+								data-color="#f99500"
+								data-rsp_ch="on"
+								data-xy="x:641px;y:1400px;"
+								data-text="w:normal;s:60;l:70;ls:1;fw:500;"
+								data-dim="minh:0px;"
+								data-btrans="rZ:-10;"
+								data-frame_999="o:0;st:w;"
+								style="z-index:19;font-family:'Impact', 'Charcoal', 'sans-serif';"
+							>$40000 
+							</rs-layer><!--
+-->						</rs-slide>
+					</rs-slides>
+					<rs-static-layers><!--
+					--></rs-static-layers>
+				</rs-module>
+				<script>
+					
+				</script>
+<script>
+		if(typeof revslider_showDoubleJqueryError === "undefined") {function revslider_showDoubleJqueryError(sliderID) {console.log("You have some jquery.js library include that comes after the Slider Revolution files js inclusion.");console.log("To fix this, you can:");console.log("1. Set 'Module General Options' -> 'Advanced' -> 'jQuery & OutPut Filters' -> 'Put JS to Body' to on");console.log("2. Find the double jQuery.js inclusion and remove it");return "Double Included jQuery Library";}}
+</script>
+			</rs-module-wrap>
+			<!-- END REVOLUTION SLIDER -->
+
+				<script>
+					var	tpj = jQuery;
+					if(window.RS_MODULES === undefined) window.RS_MODULES = {};
+					if(RS_MODULES.modules === undefined) RS_MODULES.modules = {};
+					RS_MODULES.modules["revslider1231"] = {once: RS_MODULES.modules["revslider1231"]!==undefined ? RS_MODULES.modules["revslider1231"].once : undefined, init:function() {
+						window.revapi123 = window.revapi123===undefined || window.revapi123===null || window.revapi123.length===0  ? document.getElementById("rev_slider_123_1") : window.revapi123;
+						if(window.revapi123 === null || window.revapi123 === undefined || window.revapi123.length==0) { window.revapi123initTry = window.revapi123initTry ===undefined ? 0 : window.revapi123initTry+1; if (window.revapi123initTry<20) requestAnimationFrame(function() {RS_MODULES.modules["revslider1231"].init()}); return;}
+						window.revapi123 = jQuery(window.revapi123);
+						if(window.revapi123.revolution==undefined){ revslider_showDoubleJqueryError("rev_slider_123_1"); return;}
+						revapi123.revolutionInit({
+								revapi:"revapi123",
+								DPR:"dpr",
+								sliderLayout:"fullwidth",
+								visibilityLevels:"1240,1024,778,480",
+								gridwidth:1080,
+								gridheight:1920,
+								perspective:600,
+								perspectiveType:"global",
+								editorheight:"1920,768,960,720",
+								responsiveLevels:"1240,1024,778,480",
+								progressBar:{disableProgressBar:true},
+								navigation: {
+									onHoverStop:false
+								},
+								viewPort: {
+									global:false,
+									globalDist:"-200px",
+									enable:false
+								},
+								fallbacks: {
+									allowHTML5AutoPlayOnAndroid:true
+								},
+						});
+						
+					}} // End of RevInitScript
+					if (window.RS_MODULES.checkMinimal!==undefined) { window.RS_MODULES.checkMinimal();};
+				</script>
+
+
+
+		</body>
+				</html>
+		
